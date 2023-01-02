@@ -1,8 +1,8 @@
-export default function (){
+export default function Header (){
     return (
-        <div>
-            <div></div>
-            <ul>
+        <div className="flex justify-between">
+            <div>LOGO</div>
+            <ul className="flex">
                 <li>Home</li>
                 <li>cars</li>
                 <li>About</li>
