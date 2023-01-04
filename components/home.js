@@ -11,11 +11,19 @@ export default function HomePage (){
                     <div className="bg-[#fff] w-3/4 h-[0.1rem] mt-40"></div>
                 </div>
             </div>
-            <div className="flex w-4/6 justify-between">
-                <div className="1/4 justify-center items-center">hello</div>
-                <div className="1/4 justify-center items-center">hello</div>
-                <div className="1/4 justify-center items-center">hello</div>
-                <div className="1/4 justify-center items-center">hello</div>
+            <div className="flex w-4/6 justify-between items-flex-end">
+                <div className="1/4 justify-center items-center">
+                    <h3>3.4 sec</h3>
+                    <h4>from 0 to 90km/h</h4>
+                </div>
+                <div className="1/4 justify-center items-center">
+                    <h3>370 ml</h3>
+                    <h4>90km/h</h4>
+                </div>
+                <div className="1/4 justify-center items-center relative">
+                    <img src="play.jpg" alt="" className="w-[5rem]"/>
+                    <a href="#" className="absolute top-3 bg-[red]">play</a>
+                </div>
             </div>
         </div>
     )
