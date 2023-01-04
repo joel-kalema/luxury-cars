@@ -1,7 +1,6 @@
-export default function Home (){
+export default function HomePage (){
     return (
-        <div>
-            <h1>This is the image</h1>
+        <div className="home_page">
         </div>
     )
 }
