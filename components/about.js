@@ -17,9 +17,9 @@ export default function About () {
                 </ul>
                 <div className="w-4/6">
                     <img src="about.jpg" alt="cars" />
-                    <div className="flex p-2 justify-between bg-[#fff2]">
-                        <p className="text-xs">this page hleps you to have more detail about the cars, click the bouton to have more details</p>
-                        <a href="" className="p-3 bg-[red] text-[#fff] mb-[-3rem] h-[3rem]">see</a>
+                    <div className="flex p-4 justify-between bg-[#fff2]">
+                        <p className="text-xs w-5/6">this page hleps you to have more detail about the cars, click the bouton to have more details</p>
+                        <a href="" className="p-3 bg-[red] text-[#fff] mb-[-5rem] mt-3 h-[3rem]">see</a>
                     </div>
                 </div>
             </div>
