@@ -1,3 +1,5 @@
+import images from './datas/images/images'
+
 export default function Cars () {
     return (
         <div className="py-10 md:py-28">
@@ -9,6 +11,11 @@ export default function Cars () {
             <div className="mx-auto w-4/6">
                 <p className="text-sm px-20 text-center">I can help you build a product, feature or website Look through some of my work and experience! 
                     If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
+                <div className='flex justify-around mx-8 my-16'>
+                    {images.map((image) => (
+                        <img src={image.logo} alt={image} className='h-[4rem]' />
+                    ))}
+                </div>
             </div>
         </div>
     )
