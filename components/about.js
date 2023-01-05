@@ -8,18 +8,18 @@ export default function About () {
             </div>
             <div className="flex w-3/6 mx-auto justify-between">
                 <ul>
-                    <li>Aston Martir</li>
-                    <li>Ferrari</li>
-                    <li>Bugatti</li>
-                    <li>Maserati</li>
-                    <li>Porsche</li>
-                    <li>Bentley</li>
+                    <li className="my-4">Aston Martir</li>
+                    <li className="my-4">Ferrari</li>
+                    <li className="my-4">Bugatti</li>
+                    <li className="my-4">Maserati</li>
+                    <li className="my-4">Porsche</li>
+                    <li className="my-4">Bentley</li>
                 </ul>
-                <div className="w-3/5">
+                <div className="w-4/6">
                     <img src="about.jpg" alt="cars" />
-                    <div>
-                        <p>detail</p>
-                        <a href="">see detail</a>
+                    <div className="flex p-2 justify-between bg-[#fff2]">
+                        <p className="text-xs">this page hleps you to have more detail about the cars, click the bouton to have more details</p>
+                        <a href="" className="p-3 bg-[red] text-[#fff] mb-[-3rem] h-[3rem]">see</a>
                     </div>
                 </div>
             </div>
