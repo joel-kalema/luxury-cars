@@ -6,7 +6,7 @@ export default function About () {
                 <div className="w-1/6 h-[0.2rem] bg-[red]"></div>
                 <h1 className="text-[#fff3] text-8xl font-bold mt-[-4rem]">LUXURY</h1>
             </div>
-            <div>
+            <div className="flex w-3/6 mx-auto justify-between">
                 <ul>
                     <li>Aston Martir</li>
                     <li>Ferrari</li>
@@ -15,7 +15,7 @@ export default function About () {
                     <li>Porsche</li>
                     <li>Bentley</li>
                 </ul>
-                <div className="w-2/6">
+                <div className="w-3/5">
                     <img src="about.jpg" alt="cars" />
                     <div>
                         <p>detail</p>
