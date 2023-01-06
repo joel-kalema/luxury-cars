@@ -1,6 +1,6 @@
 export default function Header (){
     return (
-        <div className="flex justify-between fixed w-5/6 exp backdrop-blur-md p-4 left-24 bg-[#fff1]">
+        <div className="flex justify-between fixed w-5/6 exp backdrop-blur-md p-4 left-24 bg-[#fff1] z-50">
             <div>LOGO</div>
             <ul className="flex w-2/6 justify-between text-sm">
                 <li className='cursor-pointer hover:text-[red]'>Home</li>
