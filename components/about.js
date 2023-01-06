@@ -8,12 +8,12 @@ export default function About () {
             </div>
             <div className="flex w-3/6 mx-auto justify-between">
                 <ul>
-                    <li className="my-4">Aston Martir</li>
-                    <li className="my-4">Ferrari</li>
-                    <li className="my-4">Bugatti</li>
-                    <li className="my-4">Maserati</li>
-                    <li className="my-4">Porsche</li>
-                    <li className="my-4">Bentley</li>
+                    <li className="my-4 hover:text-[red]">Aston Martir</li>
+                    <li className="my-4 hover:text-[red]">Ferrari</li>
+                    <li className="my-4 hover:text-[red]">Bugatti</li>
+                    <li className="my-4 hover:text-[red]">Maserati</li>
+                    <li className="my-4 hover:text-[red]">Porsche</li>
+                    <li className="my-4 hover:text-[red]">Bentley</li>
                 </ul>
                 <div className="w-4/6">
                     <img src="about.jpg" alt="cars" />
