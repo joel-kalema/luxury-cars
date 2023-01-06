@@ -17,6 +17,9 @@ export default function Cars () {
                     ))}
                 </div>
             </div>
+            <div>
+                <img src='video.jpg' alt='' />
+            </div>
         </div>
     )
 }
