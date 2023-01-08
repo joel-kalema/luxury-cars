@@ -7,7 +7,7 @@ export default function Header (){
                 <li className='cursor-pointer hover:text-[red]'>cars</li>
                 <li className='cursor-pointer hover:text-[red]'>About</li>
                 <li className='cursor-pointer hover:text-[red]'>Infos</li>
-                <li className='cursor-pointer hover:text-[red]'>Contacts</li>
+                <li className='cursor-pointer hover:text-[red]'>Contact</li>
             </ul>
         </div>
     )
