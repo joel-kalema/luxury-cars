@@ -1,3 +1,5 @@
+import { TbArrowNarrowRight } from 'react-icons/tb';
+
 export default function About () {
     return (
         <div className="py-10 md:py-28">
@@ -19,7 +21,7 @@ export default function About () {
                     <img src="about.jpg" alt="cars" />
                     <div className="flex p-4 justify-between bg-[#fff2]">
                         <p className="text-xs w-5/6">this page hleps you to have more detail about the cars, click the bouton to have more details</p>
-                        <a href="" className="p-3 bg-[red] text-[#fff] mb-[-5rem] mt-3 h-[3rem]">see</a>
+                        <a href="" className="p-3 bg-[red] text-[#fff]"><TbArrowNarrowRight/></a>
                     </div>
                 </div>
             </div>
