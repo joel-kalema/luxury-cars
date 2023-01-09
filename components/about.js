@@ -10,7 +10,7 @@ export default function About () {
             </div>
             <div className="flex w-3/6 mx-auto justify-between">
                 <ul>
-                    <li className="my-4 hover:text-[red]">Aston Martir</li>
+                    <li className="my-4 hover:text-[red]">Aston Martin</li>
                     <li className="my-4 hover:text-[red]">Ferrari</li>
                     <li className="my-4 hover:text-[red]">Bugatti</li>
                     <li className="my-4 hover:text-[red]">Maserati</li>
@@ -19,9 +19,12 @@ export default function About () {
                 </ul>
                 <div className="w-4/6">
                     <img src="about.jpg" alt="cars" />
-                    <div className="flex p-4 justify-between bg-[#fff2]">
-                        <p className="text-xs w-5/6">this page hleps you to have more detail about the cars, click the bouton to have more details</p>
-                        <a href="" className="p-3 bg-[red] text-[#fff]"><TbArrowNarrowRight/></a>
+                    <div className="flex p-4 justify-between bg-[#3F3F3F] items-center">
+                        <div>
+                            <h1 className='font-semibold text-sm mb-2'>Aston Martin</h1>
+                            <p className="text-xs w-5/6">this page hleps you to have more detail about the cars, click the bouton to have more details</p>
+                        </div>
+                        <a href="" className="p-3 bg-[red] text-[#fff] w-[3rem] h-[2.5rem]"><TbArrowNarrowRight/></a>
                     </div>
                 </div>
             </div>
