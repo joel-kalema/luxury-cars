@@ -2,11 +2,12 @@
 @import "~tailwindcss/components";
 @import "~tailwindcss/utilities";
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
 
 body {
     background-color: #242424;
-    color: #c0c4d0;
-    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
     letter-spacing: .5px;
 }
 
