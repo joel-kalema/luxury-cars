@@ -4,7 +4,7 @@
 
 ![lux cars](https://user-images.githubusercontent.com/57408419/209013169-7a010fc1-af17-41a7-bd54-581fa5c4fd99.jpg)
 
-> Description the project
+> Description the project.
 
 
 ## Built With
