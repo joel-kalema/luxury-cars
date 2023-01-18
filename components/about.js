@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { TbArrowNarrowRight } from 'react-icons/tb';
 
 export default function About () {
@@ -9,6 +10,7 @@ export default function About () {
                 <h1 className="text-[#fff2] text-8xl font-bold mt-[-4rem]">LUXURY</h1>
             </div>
             <div className="flex w-3/6 mx-auto justify-between">
+                <Link href='/paths/cars'>VIEW ALL</Link>
                 <ul>
                     <li className="my-4 text-[red] cursor-pointer">Aston Martin</li>
                     <li className="my-4 hover:text-[red] cursor-pointer">Ferrari</li>
