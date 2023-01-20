@@ -9,12 +9,16 @@ export default function About () {
                 <div className="w-1/6 h-[0.2rem] bg-[red] mt-1"></div>
                 <h1 className="text-[#fff2] text-8xl font-bold mt-[-4rem]">LUXURY</h1>
             </div>
-            <div className="flex w-3/6 mx-auto justify-between">
-                <Link href='/paths/cars'>VIEW ALL</Link>
+            <Link href='/paths/cars' className='ml-[68%] text-xs border-stone-400 border-[1px] py-2 px-4'>VIEW ALL</Link>
+            <div className="flex w-3/6 mx-auto justify-between mt-10">
                 <ul>
                     <li className="my-4 text-[red] cursor-pointer">Aston Martin</li>
                     <li className="my-4 hover:text-[red] cursor-pointer">Ferrari</li>
                     <li className="my-4 hover:text-[red] cursor-pointer">Bugatti</li>
+                    <li className="my-4 hover:text-[red] cursor-pointer">Maserati</li>
+                    <li className="my-4 hover:text-[red] cursor-pointer">Porsche</li>
+                    <li className="my-4 hover:text-[red] cursor-pointer">Bentley</li>
+                    <li className="my-4 hover:text-[red] cursor-pointer">Rolls-Royce</li>
                     <li className="my-4 hover:text-[red] cursor-pointer">Maserati</li>
                     <li className="my-4 hover:text-[red] cursor-pointer">Porsche</li>
                     <li className="my-4 hover:text-[red] cursor-pointer">Bentley</li>
