@@ -1,7 +1,20 @@
 import Link from 'next/link';
+import { useState, useEffect } from 'react';
+import { useRouter } from 'next/router';
 import { TbArrowNarrowRight } from 'react-icons/tb';
+import { CarsData } from './datas/cars'
 
 export default function About () {
+
+    const [info, setinfo] = useState([CarsData[0]])
+    const router = useRouter();
+    const content = (car) => {
+        setinfo([car])
+    }
+    const detail = (car) => {
+        router.push(`/cars/${car.name.split(' ').join('_')}`);
+    }
+
     return (
         <div className="py-10 md:py-28">
             <div className="mx-auto w-2/6 mb-28">
@@ -12,27 +25,29 @@ export default function About () {
             <Link href='/paths/cars' className='ml-[68%] text-xs border-stone-400 border-[1px] py-2 px-4'>VIEW ALL</Link>
             <div className="flex w-3/6 mx-auto justify-between mt-10">
                 <ul>
-                    <li className="my-4 text-[red] cursor-pointer">Aston Martin</li>
-                    <li className="my-4 hover:text-[red] cursor-pointer">Ferrari</li>
-                    <li className="my-4 hover:text-[red] cursor-pointer">Bugatti</li>
-                    <li className="my-4 hover:text-[red] cursor-pointer">Maserati</li>
-                    <li className="my-4 hover:text-[red] cursor-pointer">Porsche</li>
-                    <li className="my-4 hover:text-[red] cursor-pointer">Bentley</li>
-                    <li className="my-4 hover:text-[red] cursor-pointer">Rolls-Royce</li>
-                    <li className="my-4 hover:text-[red] cursor-pointer">Maserati</li>
-                    <li className="my-4 hover:text-[red] cursor-pointer">Porsche</li>
-                    <li className="my-4 hover:text-[red] cursor-pointer">Bentley</li>
+                    {CarsData.map((car) => (
+                        <li
+                            onClick={() => content(car)} className="hover:text-[red] my-2 cursor-pointer hover:ml-4 transition-all hover:font-bold">
+                            {car.name}
+                        </li>
+                    ))}
                 </ul>
-                <div className="w-4/6">
-                    <img src="about.jpg" alt="cars" />
-                    <div className="flex p-4 justify-between bg-[#3F3F3F] items-center">
-                        <div>
-                            <h1 className='font-semibold text-sm mb-2'>Aston Martin</h1>
-                            <p className="text-xs w-5/6">this page hleps you to have more detail about the cars, click the bouton to have more details</p>
-                        </div>
-                        <a href="" className="p-3 bg-[red] text-[#fff] w-[3rem] h-[2.5rem]"><TbArrowNarrowRight/></a>
-                    </div>
-                </div>
+                {
+                    info &&(
+                        info.map((car) => (
+                            <div className="w-4/6">
+                                <img src={car.image[0]} alt="cars" />
+                                <div className="flex p-4 justify-between bg-[#3F3F3F] items-center">
+                                    <div>
+                                        <h1 className='font-semibold text-sm mb-2'>{car.name}</h1>
+                                        <p className="text-xs w-5/6">{car.extract}</p>
+                                    </div>
+                                    <div onClick={() => detail(car)} className="p-3 bg-[red] text-[#fff] w-[3rem] h-[2.5rem]"><TbArrowNarrowRight/></div>
+                                </div>
+                            </div>
+                        ))
+                    )
+                }  
             </div>
         </div>
     )
