@@ -3,7 +3,7 @@ import { BsFillPlayFill } from 'react-icons/bs';
 export default function HomePage (){
     return (
         <div className="home_page flex items-center relative">
-            <div className="bg-[#fff1] h-full w-2/6 flex items-center z-10">
+            <div className="h-full w-2/6 flex items-center z-10">
                 <div className="w-3/4">
                     <div className="bg-[#fff] w-3/4 w-[0.1rem] h-20  mx-auto"></div>
                 </div>

@@ -1,0 +1,6 @@
+.cars {
+    background-image: linear-gradient(to top, #1b1a1c, #1b1a1c25), url('/images/home/cars.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
