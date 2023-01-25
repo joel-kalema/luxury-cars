@@ -8,8 +8,16 @@ const router: NextRouter = useRouter();
     const car = name ? getCar(name) : undefined;
     
     return (
-        <div>
-            <img src={car?.image[0]} alt="cars" />
+        <div className="relative">
+            <div className="h-screen truncate detai_home">
+                <img src={car?.image[1]} alt="lambourghini"/>
+            </div>
+            <div className="absolute top-0 px-60 text-center flex justfy-center items-center h-screen">
+                <div >
+                    <h1 className="font-bold text-6xl">{car?.name}</h1>
+                    <p>{car?.detail}</p>
+                </div>
+            </div>
         </div>
     );
 }
