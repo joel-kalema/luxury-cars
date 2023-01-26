@@ -1,7 +1,7 @@
 export const  CarsData = [
     {
         name: 'Lamborghini',
-        image: ["/images/cars/lamborghini.jpg", "/images/home/lambourghini.jpg"],
+        image: ["/images/cars/lamborghini.jpg", "/images/home/lambourghini.jpg", "/images/galery/lamborghini01.jpg", "/images/galery/lamborghini02.jpg"],
         extract:'There are various elements such as automatic climate control, premium leather materials...',
         detail: 'There are various elements such as automatic climate control, premium leather materials, power seating, air filtration, power features, performance speakers, and LCD monitors. On the exterior, you will find things like light tinted glass, auto dimming side mirrors, LED brake lights, and specialty headlights.',
         link:'https://www.lamborghini.com/en-en',
