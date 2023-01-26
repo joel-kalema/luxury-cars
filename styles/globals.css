@@ -72,12 +72,12 @@ textarea {
 } */
 /* #191d28 */
 
-.detai_home::after {
+.detail_home::after {
     background-color: rgba(0, 0, 0, 0.712);
     content: '';
     display: block;
     position: absolute;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
