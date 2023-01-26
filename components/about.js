@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { TbArrowNarrowRight } from 'react-icons/tb';
 import { CarsData } from './datas/cars'
+import Line from './lines'
 
 export default function About () {
 
@@ -16,7 +17,8 @@ export default function About () {
     }
 
     return (
-        <div className="py-10 md:py-28">
+        <div className="py-10 md:py-28 relative">
+            <Line />
             <div className="mx-auto w-2/6 mb-28">
                 <h1 className="text-2xl">Get All Luxury Cars</h1>
                 <div className="w-1/6 h-[0.2rem] bg-[red] mt-1"></div>
