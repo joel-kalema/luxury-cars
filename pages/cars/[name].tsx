@@ -32,9 +32,13 @@ const router: NextRouter = useRouter();
                     <p>{car?.detail}</p>
                 </div>
             </div>
-            <div>
+            <div className="py-32">
                 <h1 className="font-bold text-3xl text-center">GALERY</h1>
-                <div></div>
+                <div className="flex flex-wrap justify-between px-56">
+                    {car?.galery?.map((item) => (
+                        <div className="w-[32%] mt-4"><img src={item} alt={car?.name}/></div>
+                    ))}
+                </div>
             </div>
         </div>
     );
