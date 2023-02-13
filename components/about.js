@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 import { TbArrowNarrowRight } from 'react-icons/tb';
 import { CarsData } from './datas/cars'
 import Line from './lines'
+import Wide from './wide'
 
 export default function About () {
 
@@ -18,7 +19,7 @@ export default function About () {
 
     return (
         <div className="py-10 md:py-28 relative">
-            <Line />
+            {/* <Line /> */}
             <div className="mx-auto w-2/6 mb-28">
                 <h1 className="text-2xl">Get All Luxury Cars</h1>
                 <div className="w-1/6 h-[0.2rem] bg-[red] mt-1"></div>
@@ -29,7 +30,7 @@ export default function About () {
                 <ul>
                     {CarsData.map((car) => (
                         <li
-                            onClick={() => content(car)} className="hover:text-[red] my-2 cursor-pointer hover:ml-4 transition-all hover:font-bold">
+                            onClick={() => content(car)} className="hover:text-[red] my-2 cursor-pointer hover:ml-4 duration-500 ease-out hover:font-bold">
                             {car.name}
                         </li>
                     ))}
@@ -51,6 +52,7 @@ export default function About () {
                     )
                 }  
             </div>
+            <Wide />
         </div>
     )
 }
