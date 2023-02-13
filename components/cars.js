@@ -1,4 +1,5 @@
 import images from './datas/images/images'
+import Link from 'next/link'
 
 export default function Cars () {
     return (
@@ -17,8 +18,17 @@ export default function Cars () {
                     ))}
                 </div>
             </div>
-            <div>
-                <img src='video.jpg' alt='' />
+            <div className='campareson py-20 flex'>
+                <div className='ml-20'>
+                    <h1 className='text-5xl font-bold'>Compare Cars Side By Side</h1>
+                    <p className='text-xl my-4'>Choose Cars To Compare, Or Check Out Our Popular Comparisons.</p>
+                    <Link href='/paths/comparesion' className='text-[red] text-4xl hover:ml-10 duration-500 ease-out'>start Compare</Link>
+                </div>
+                <h1 className='text-9xl ml-20'>
+                    <span className='font-bold'>1</span>
+                    <span className='text-10xl text-[red] ml-[-1.5rem] font-bold'>vs</span>
+                    <span className='font-bold ml-[-1.5rem]'>2</span>
+                </h1>
             </div>
         </div>
     )
