@@ -1,11 +1,14 @@
+import { SiFerrari,SiLamborghini } from 'react-icons/si';
+
 export const  CarsData = [
     {
         name: 'Lamborghini',
         image: ["/images/cars/lamborghini.jpg", "/images/home/lambourghini.jpg", "/images/galery/lamborghini01.jpg", "/images/galery/lamborghini02.jpg"],
+        galery: ["/images/galery/lamborghini03.jpg","/images/galery/lamborghini04.jpg","/images/galery/lamborghini05.jpg","/images/galery/lamborghini06.jpg","/images/galery/lamborghini07.jpg","/images/galery/lamborghini08.jpg"],
         extract:'There are various elements such as automatic climate control, premium leather materials...',
         detail: 'There are various elements such as automatic climate control, premium leather materials, power seating, air filtration, power features, performance speakers, and LCD monitors. On the exterior, you will find things like light tinted glass, auto dimming side mirrors, LED brake lights, and specialty headlights.',
         link:'https://www.lamborghini.com/en-en',
-        
+        logo: <SiLamborghini />   
     },
     {
         name: 'Aston Martin',
@@ -21,7 +24,7 @@ export const  CarsData = [
         extract:'As such, one of the major items of what makes a Ferrari special is their utilization of race...',
         detail: 'As such, one of the major items of what makes a Ferrari special is their utilization of race technology in their street cars. Often, in the old days this was merely using race engines as the platform for street car motors, whether it was the vintage V12s or the turbo era F1 cars of the 1980s.',
         link:'https://www.ferrari.com/en-RW',
-        
+        logo: <SiFerrari /> 
     },
     {
         name: 'Bugatti',
