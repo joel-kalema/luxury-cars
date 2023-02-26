@@ -4,13 +4,11 @@ import Import from '../import';
 export default function Compareson () {
 
     const [comparison, setComparison] = useState([])
-
     const result = (car) => {
         const checkCar = comparison.filter(carItem => car.name === carItem.name);
-        if(comparison.length <2 && checkCar.length === 0){
+        if(comparison.length < 2 && checkCar.length === 0){
             setComparison([...comparison, car]);
         }
-        console.log(comparison)
     }
 
     return (
@@ -30,9 +28,22 @@ export default function Compareson () {
                 </div>
                 {
                     comparison && (
-                        comparison.map((car) => (
-                            <div>{car.name}</div>
-                        ))
+                        <div className='flex'>
+                            <div className='w-1/5 p-2'>
+                                <div>
+                                    <img src={comparison[0].image[0]} alt={comparison[0].name} />
+                                </div>
+                                <div>{comparison[0].name}</div>
+                            </div>
+
+
+                            <div className='w-1/5 p-2'>
+                                <div>
+                                    <img src={comparison[1].image[0]} alt={comparison[1].name} />
+                                </div>
+                                <div>{comparison[1].name}</div>
+                            </div>
+                        </div>
                     )
                 }
             </div>
