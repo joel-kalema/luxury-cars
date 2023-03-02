@@ -79,3 +79,20 @@ textarea {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.compared-hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 0, 0);
+    transition: .3s ease-in-out;
+}
+.compared:hover > .compared-hover {
+    opacity: 1;
+    transition: .3s ease-in-out;
+} 
