@@ -15,7 +15,7 @@ export default function Compareson () {
         <div>
             <Import.Header />
             <div className='py-28 px-28'>
-                <h1 className='text-xl'>Choose the Cars</h1>
+                <h1 className='text-xl'>Compare Cars Side By Side</h1>
                 <div className='flex flex-wrap mx-auto'>
                     {Import.CarsData.map((car) => (
                         <div className='w-[19%] relative compared m-[0.5%]' onClick={() => result(car)}>
