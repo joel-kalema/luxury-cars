@@ -17,7 +17,7 @@ h1{
 
 button {
     background-color: red;
-    color: #000000;
+    color: #1B1A1C;
     padding: .3rem 2rem;
     font-size: small;
 }
@@ -25,6 +25,21 @@ button {
 button:hover {
     background-color: #fff;
     color: red;
+    border: red 1px solid;
+}
+
+.view {
+    border: red 1px solid;
+    background-color: red;
+    color: #1B1A1C;
+    transition: 0.6s;
+}
+
+.view:hover {
+    background-color: rgba(255, 0, 0, 0);
+    border: red 1px solid;
+    color: #fff;
+    transition: 0.3s;
 }
 
 input,
