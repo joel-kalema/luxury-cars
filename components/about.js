@@ -10,6 +10,7 @@ export default function About () {
 
     const [info, setinfo] = useState([CarsData[0]])
     const router = useRouter();
+
     const content = (car) => {
         setinfo([car])
     }
@@ -26,7 +27,7 @@ export default function About () {
                 <h1 className="text-[#fff2] text-8xl font-bold mt-[-4rem]">LUXURY</h1>
             </div>
             <Link href='/paths/cars' className='ml-[68%] view text-xs font-semibold py-2 px-4'>VIEW ALL</Link>
-            <div className="flex w-3/6 mx-auto justify-between mt-10">
+            <div className="flex w-3/6 mx-auto justify-between mt-6">
                 <ul>
                     {CarsData.map((car) => (
                         <li
@@ -38,11 +39,14 @@ export default function About () {
                 {
                     info &&(
                         info.map((car) => (
-                            <div className="w-4/6">
+                            <div className="w-4/6 drop-shadow-xl">
                                 <img src={car.image[0]} alt="cars" />
                                 <div className="flex p-4 justify-between bg-[#3F3F3F] items-center">
                                     <div>
-                                        <h1 className='font-semibold text-sm mb-2'>{car.name}</h1>
+                                        <div className='flex items-center'>
+                                            <h1 className='font-semibold text-sm mb-2'>{car.name}</h1>
+                                            <div className="w-1/6 h-[0.05rem] bg-[red]  ml-2"></div>
+                                        </div>
                                         <p className="text-xs w-5/6">{car.extract}</p>
                                     </div>
                                     <div onClick={() => detail(car)} className="p-3 bg-[red] text-[#fff] w-[3rem] h-[2.5rem]"><TbArrowNarrowRight/></div>
