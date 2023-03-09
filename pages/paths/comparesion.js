@@ -13,7 +13,6 @@ export default function Compareson () {
 
     return (
         <div>
-            <Import.Header />
             <div className='py-28 px-28'>
                 <h1 className='text-xl'>Compare Cars Side By Side</h1>
                 <div className='flex flex-wrap mx-auto'>
