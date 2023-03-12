@@ -15,6 +15,10 @@ h1{
     color: #fff;
 }
 
+li {
+    list-style: none;
+}
+
 button {
     background-color: red;
     color: #1B1A1C;
@@ -29,17 +33,19 @@ button:hover {
 }
 
 .view {
-    border: red 1px solid;
-    background-color: red;
-    color: #1B1A1C;
-    transition: 0.6s;
-}
-
-.view:hover {
     background-color: rgba(255, 0, 0, 0);
     border: red 1px solid;
     color: #fff;
     transition: 0.3s;
+}
+
+.view:hover {
+    color: red;
+    transition: 0.3s;
+}
+
+.info {
+    color: red;
 }
 
 input,
@@ -107,7 +113,34 @@ textarea {
     background: rgb(255, 0, 0);
     transition: .3s ease-in-out;
 }
+
 .compared:hover > .compared-hover {
     opacity: 1;
     transition: .3s ease-in-out;
-} 
+}
+
+.experience {
+    position: relative;
+    width: 100%;
+    background-image: url("/luxury-car-brand.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.rotate {
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
