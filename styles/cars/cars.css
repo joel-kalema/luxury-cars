@@ -4,3 +4,17 @@
     background-repeat: no-repeat;
     height: 100vh;
 }
+
+.over_name {
+    opacity: 0;
+    margin-right: -5rem;
+    top: .8rem;
+    right: .8rem;
+    font-size: 5rem;
+    color: #5a5a5a;
+}
+
+.over_div:hover > div div .line {
+    width: 20%;
+    transition: .5s ease-in-out;
+}
