@@ -14,8 +14,7 @@
     color: #5a5a5a;
 }
 
-.over_div:hover > div div span {
-    opacity: 1;
-    margin-right: 0rem;
+.over_div:hover > div div .line {
+    width: 20%;
     transition: .5s ease-in-out;
 }
