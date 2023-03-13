@@ -8,7 +8,8 @@ import Wide from './wide'
 
 export default function About () {
 
-    const [info, setinfo] = useState([CarsData[0]])
+    const [info, setinfo] = useState([CarsData[0]]);
+    const [clicked, setClicked] = useState(null)
     const router = useRouter();
 
     const content = (car) => {
@@ -31,7 +32,13 @@ export default function About () {
                 <ul>
                     {CarsData.map((car) => (
                         <li
-                            onClick={() => content(car)} className="hover:text-[red] my-2 cursor-pointer hover:ml-4 duration-500 ease-out hover:font-bold">
+                            onClick={() => {content(car); setClicked(car.name)}} 
+                            className={
+                                clicked === car.name ?
+                                "text-[red] my-2 cursor-pointer ml-4 duration-500 ease-out font-bold"
+                                :
+                                "hover:text-[red] my-2 cursor-pointer hover:ml-4 duration-500 ease-out hover:font-bold"
+                            }>
                             {car.name}
                         </li>
                     ))}
@@ -40,7 +47,9 @@ export default function About () {
                     info &&(
                         info.map((car) => (
                             <div className="w-4/6 drop-shadow-xl">
-                                <img src={car.image[0]} alt="cars" />
+                                <div>
+                                    <img src={car.image[0]} alt="cars" className='w-full'/>
+                                </div>
                                 <div className="flex p-4 justify-between bg-[#3F3F3F] items-center">
                                     <div>
                                         <div className='flex items-center'>
