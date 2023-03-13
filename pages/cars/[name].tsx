@@ -21,7 +21,7 @@ const router: NextRouter = useRouter();
                     <AiOutlineArrowDown className='animate-bounce w-9 h-9 text-[red] mx-auto mt-14'/>
                 </div>
             </div>
-            <div className="flex w-3/5 mx-auto mt-20 rounded-2xl overflow-hidden bg-[#141314] drop-shadow-xl h-[30rem]">
+            <div className="flex max-w-[50rem] mx-auto mt-20 rounded-2xl overflow-hidden bg-[#141314] drop-shadow-xl h-[30rem]">
                 <div className="flex w-2/5"><img src={car?.image[2]} alt={car?.name} /></div>
                 <div className="w-3/5 pl-10">
                     <div className="w-2/4 mb-10 mt-10">
