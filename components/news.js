@@ -1,4 +1,5 @@
 import newsData from './datas/news'
+import { MdOutlineModeComment } from 'react-icons/md';
 
 export default function News () {
     return (
@@ -21,6 +22,13 @@ export default function News () {
                     </div>
                 ))}
             </div>
+            <div className="mt-32 w-[30rem] relative h-[30rem] mx-auto p-20 border-solid border-2 border-wight-500 rounded-full flex justify-center items-center">
+                <MdOutlineModeComment 
+                className='text-9xl text-[red] absolute top-[-1rem] left-[10%] bg-[#1B1A1C] '
+                />
+                <h1 className="text-5xl">It's not just a car, It's someone else's dream
+                <span className="text-[red] text-7xl">.</span></h1>
+           </div>
         </div>
     )
 }
