@@ -114,10 +114,22 @@ textarea {
     transition: .3s ease-in-out;
 }
 
+.reset {
+    border: 1px solid red;
+    transition: 0.3s;
+}
+.reset:hover {
+    color: #fff;
+    background-color: #757575;
+    transition: 0.3s;
+}
+
 .compared:hover > .compared-hover {
     opacity: 1;
     transition: .3s ease-in-out;
 }
+
+
 
 .experience {
     position: relative;
