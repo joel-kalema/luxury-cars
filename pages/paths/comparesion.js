@@ -4,6 +4,7 @@ import Import from '../import';
 export default function Compareson () {
 
     const [comparison, setComparison] = useState([])
+
     const result = (car) => {
         const checkCar = comparison.filter(carItem => car.name === carItem.name);
         if(comparison.length < 2 && checkCar.length === 0){
@@ -11,34 +12,67 @@ export default function Compareson () {
         }
     }
 
+    const reset = () => {
+       setComparison([]);
+    }
+
     return (
         <div>
             <div className='py-28 px-28'>
-                <h1 className='text-xl'>Compare Cars Side By Side</h1>
-                <div className='flex flex-wrap mx-auto'>
+                <h1 className='text-2xl font-bold mb-2'>Compare Cars Side By Side</h1>
+                <div className='w-[5rem] h-[.1rem] bg-[red] mb-6'></div>
+                <div 
+                    className={
+                        comparison.length === 2 ? 'hidden duration-300 ease-out' 
+                        : 
+                        'flex flex-wrap mx-auto duration-300 ease-out'}>
                     {Import.CarsData.map((car) => (
-                        <div className='w-[19%] relative compared m-[0.5%]' onClick={() => result(car)}>
+                        <div className='w-[15%] relative compared m-[0.5%]' onClick={() => result(car)}>
                             <div className='compared-hover'>
                                 <span className='cursor-pointer'><p>{car.name}</p></span>
                             </div>
                             <div>
                                 <img src={car.image[0]} alt={car.name} />
                             </div>
-                            <p>{car.name}</p>
+                            <p className='text-sm bg-[#fff1] p-2 font-bold text-[#c5c5c5] tracking-[.05em]'>{car.name}</p>
                         </div>
                     ))}
                 </div>
                 {
                     comparison && (
-                        <div className='flex jutify-between'>
+                        <div className='compare mt-16 flex flex-col items-center w-[90%] mx-auto exp backdrop-blur-sm bg-[#fff1] rounded-xl p-10'>
+                            <div className='flex mb-10'>
+                                <div className="flex items-center mr-4">
+                                    <div className="w-[1rem] h-[1rem] mr-2 mt-1 border-[0.05rem] flex justify-center items-center p-2 rounded-full border-solid border-red-600">1</div>
+                                    <div className="w-[7rem] h-[0.05rem] bg-[red] mt-1"></div>
+                                </div>
+                                <h1 className='font-bold text-2xl'>See your result</h1>
+                                <div className="flex items-center ml-4">
+                                    <div className="w-[7rem] h-[0.05rem] bg-[red] mt-1 mr-2"></div>
+                                    <div className="w-[1rem] h-[1rem] mt-1 border-[0.05rem] flex justify-center items-center p-2 rounded-full border-solid border-red-600">2</div>
+                                </div>
+                            </div>
+                            <div className='flex jutify-between '>
                             {comparison.map((car) => (
-                                <div className='w-1/5 p-2'>
-                                    <div>
+                                <div className='w-2/4 p-6 mt-[-2rem] rounded-xl drop-shadow-lg'>
+                                    <div className='z-30'>
                                         <img src={car.image[0]} alt={car.name} />
                                     </div>
-                                    <h2>{car.name}</h2>
+                                    <div className='bg-[#fff1] z-50 p-6'>
+                                        <div className='flex items-center'>
+                                            <h1 className='font-semibold text-[#c5c5c5] text-sm mb-2 uppercase tracking-[.4em]'>{car.name}</h1>
+                                            <div className="w-[3rem] h-[0.05rem] bg-[red] ml-1"></div>
+                                        </div>
+                                        <p className='text-[.8rem] mb-4'>{car.detail}</p>
+                                        <a href={car.link} className='hover:text-[red] hover:font-bold text-xs hover:ml-4 duration-300 ease-out'>visit the site</a>
+                                    </div>
                                 </div>
                             ))}
+                            </div>
+                            <button
+                                onClick={() => reset()}
+                                className='mb-[-3.5rem] rounded-xl reset'
+                            >reset</button>
                         </div>
                     )
                 }
