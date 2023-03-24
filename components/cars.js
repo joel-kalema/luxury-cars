@@ -3,8 +3,8 @@ import Link from 'next/link'
 
 export default function Cars () {
     return (
-        <div className="py-10 md:py-28">
-            <div className="mx-auto w-2/6 mb-10">
+        <div className="py-10 md:py-28" data-aos="fade-up">
+            <div className="mx-auto w-2/6 mb-10" data-aos="fade-left">
                 <h1 className="text-2xl">Witch is the No 01 Luxury cars?</h1>
                 <div className="w-1/6 h-[0.2rem] bg-[red] mt-1"></div>
                 <h1 className="text-[#fff2] text-8xl font-bold mt-[-4rem]">CARS</h1>
@@ -27,11 +27,6 @@ export default function Cars () {
                 <div className='w-1/4 ml-10'>
                     <img src='/images/compareson.png' alt='' />
                 </div>
-                {/* <h1 className='text-9xl ml-20'>
-                    <span className='font-bold'>1</span>
-                    <span className='text-10xl text-[red] ml-[-1.5rem] font-bold'>vs</span>
-                    <span className='font-bold ml-[-1.5rem]'>2</span>
-                </h1> */}
             </div>
         </div>
     )
