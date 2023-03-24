@@ -25,7 +25,7 @@ export default function Compareson () {
                     className={
                         comparison.length === 2 ? 'hidden duration-300 ease-out' 
                         : 
-                        'flex flex-wrap mx-auto duration-300 ease-out'}>
+                        'flex flex-wrap mx-auto duration-300 ease-out compare'}>
                     {Import.CarsData.map((car) => (
                         <div className='w-[15%] relative compared m-[0.5%]' onClick={() => result(car)}>
                             <div className='compared-hover'>
@@ -54,17 +54,17 @@ export default function Compareson () {
                             </div>
                             <div className='flex jutify-between '>
                             {comparison.map((car) => (
-                                <div className='w-2/4 p-6 mt-[-2rem] rounded-xl drop-shadow-lg'>
+                                <div className='w-2/4 p-6 mt-[-2rem] rounded-xl drop-shadow-lg compare'>
                                     <div className='z-30'>
                                         <img src={car.image[0]} alt={car.name} />
                                     </div>
                                     <div className='bg-[#fff1] z-50 p-6'>
                                         <div className='flex items-center'>
-                                            <h1 className='font-semibold text-[#c5c5c5] text-sm mb-2 uppercase tracking-[.4em]'>{car.name}</h1>
+                                            <h1 className='up font-semibold text-[#c5c5c5] text-sm mb-2 uppercase tracking-[.4em]'>{car.name}</h1>
                                             <div className="w-[3rem] h-[0.05rem] bg-[red] ml-1"></div>
                                         </div>
-                                        <p className='text-[.8rem] mb-4'>{car.detail}</p>
-                                        <a href={car.link} className='hover:text-[red] hover:font-bold text-xs hover:ml-4 duration-300 ease-out'>visit the site</a>
+                                        <p className='up text-[.8rem] mb-4'>{car.detail}</p>
+                                        <a href={car.link} className='up hover:text-[red] hover:font-bold text-xs hover:ml-4 duration-300 ease-out'>visit the site</a>
                                     </div>
                                 </div>
                             ))}

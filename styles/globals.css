@@ -73,6 +73,33 @@ textarea {
     display: block;
 }
 
+.searchIn,
+.compare {
+    animation: slideIn 1s ease-in-out forwards;
+}
+
+.up {
+    animation: slideUp .8s ease forwards .5s;
+}
+
+@keyframes slideIn {
+    0% {
+      transform: translateX(500px) scale(.2);
+    }
+    100% {
+      transform: translateX(0px) scale(1);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+      transform: translateY(300px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+}
+
 
 .home_page {
     position: relative;
