@@ -2,11 +2,17 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { TbArrowNarrowRight } from 'react-icons/tb';
-import { CarsData } from './datas/cars'
-import Line from './lines'
-import Wide from './wide'
+import { CarsData } from './datas/cars';
+import Line from './lines';
+import Wide from './wide';
+import AOS from 'aos';
 
 export default function About () {
+
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+      }, []);
 
     const [info, setinfo] = useState([CarsData[0]]);
     const [clicked, setClicked] = useState(null)
@@ -20,8 +26,8 @@ export default function About () {
     }
 
     return (
-        <div className="py-10 md:py-28 relative">
-            {/* <Line /> */}
+        <div className="py-10 md:py-28 relative" data-aos="fade-up" data-aos-duration="1000">
+            <div data-aos="fade-up" data-aos-duration="1000">
             <div className="mx-auto w-2/6 mb-28">
                 <h1 className="text-2xl">Get All Luxury Cars</h1>
                 <div className="w-1/6 h-[0.2rem] bg-[red] mt-1"></div>
@@ -66,6 +72,7 @@ export default function About () {
                 }  
             </div>
             <Wide />
+            </div>
         </div>
     )
 }
