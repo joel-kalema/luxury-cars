@@ -8,7 +8,7 @@ export default function Caracteristic() {
     return (
         <div className="p-20 mx-auto relative">
             <h1 className='font-bold mb-10 text-3xl text-center'>How are luxury cars defined?</h1>
-            <div className='w-[55rem] mx-auto bg-[#fff1] pb-4 rounded-xl'>
+            <div className='w-[75%] mx-auto bg-[#fff1] pb-4 rounded-xl'>
                 <div className='w-full p-20 flex justify-center mx-auto mt-[1rem] bg-[#fff1] mt-16 relative rounded-xl drop-shadow-lg'>
                     <img src='/images/car.png' alt='' />
                     <div className='flex absolute bottom-[5.5rem] right-[8rem] items-center'>
