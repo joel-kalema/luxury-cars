@@ -1,3 +1,9 @@
 import Header from '../components/header';
+import { CarsData } from '../components/datas/cars';
 
-export default Header
+const Import ={
+    Header,
+    CarsData
+}
+
+export default Import

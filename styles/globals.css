@@ -15,15 +15,36 @@ h1{
     color: #fff;
 }
 
+li {
+    list-style: none;
+}
+
 button {
     background-color: red;
-    color: #000000;
+    color: #1B1A1C;
     padding: .3rem 2rem;
     font-size: small;
 }
 
 button:hover {
     background-color: #fff;
+    color: red;
+    border: red 1px solid;
+}
+
+.view {
+    background-color: rgba(255, 0, 0, 0);
+    border: red 1px solid;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.view:hover {
+    color: red;
+    transition: 0.3s;
+}
+
+.info {
     color: red;
 }
 
@@ -52,6 +73,33 @@ textarea {
     display: block;
 }
 
+.searchIn,
+.compare {
+    animation: slideIn 1s ease-in-out forwards;
+}
+
+.up {
+    animation: slideUp .8s ease forwards .5s;
+}
+
+@keyframes slideIn {
+    0% {
+      transform: translateX(500px) scale(.2);
+    }
+    100% {
+      transform: translateX(0px) scale(1);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+      transform: translateY(300px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+}
+
 
 .home_page {
     position: relative;
@@ -61,13 +109,77 @@ textarea {
     background-size: cover;
     background-repeat: no-repeat;
 }
-/* 
-.home_page::before {
-    background-color: rgba(0, 0, 0, 0.61);
+
+.detail_home::after {
+    background-color: rgba(0, 0, 0, 0.712);
     content: '';
     display: block;
     position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.campareson {
+    position: relative;
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0.137)),url("/video.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.compared-hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    position: absolute;
+    opacity: 0;
     width: 100%;
     height: 100%;
-} */
-/* #191d28 */
+    background: rgb(255, 0, 0);
+    transition: .3s ease-in-out;
+}
+
+.reset {
+    border: 1px solid red;
+    transition: 0.3s;
+}
+.reset:hover {
+    color: #fff;
+    background-color: #757575;
+    transition: 0.3s;
+}
+
+.compared:hover > .compared-hover {
+    opacity: 1;
+    transition: .3s ease-in-out;
+}
+
+
+
+.experience {
+    position: relative;
+    width: 100%;
+    background-image: url("/luxury-car-brand.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.rotate {
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
