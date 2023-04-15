@@ -27,7 +27,7 @@ export default function Compareson () {
                         : 
                         'flex flex-wrap mx-auto duration-300 ease-out compare'}>
                     {Import.CarsData.map((car) => (
-                        <div className='w-[15%] relative compared m-[0.5%]' onClick={() => result(car)}>
+                        <div key={car.id} className='w-[15%] relative compared m-[0.5%]' onClick={() => result(car)}>
                             <div className='compared-hover'>
                                 <span className='cursor-pointer'><p>{car.name}</p></span>
                             </div>
@@ -54,7 +54,7 @@ export default function Compareson () {
                             </div>
                             <div className='flex jutify-between '>
                             {comparison.map((car) => (
-                                <div className='w-2/4 p-6 mt-[-2rem] rounded-xl drop-shadow-lg compare'>
+                                <div key={car.id} className='w-2/4 p-6 mt-[-2rem] rounded-xl drop-shadow-lg compare'>
                                     <div className='z-30'>
                                         <img src={car.image[0]} alt={car.name} />
                                     </div>

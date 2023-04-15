@@ -50,7 +50,7 @@ export default function Caracteristic() {
             <div className='absolute text-sm left-[17rem] bottom-[3rem] py-4 px-6 exp backdrop-blur-sm bg-[#fff1] rounded-xl drop-shadow-lg'>
                 <lu>
                     {lists.map(list => (
-                        <li className='flex items-center'><GiAlliedStar  className='mr-1 text-[red]'/> {list}</li>
+                        <li key={list} className='flex items-center'><GiAlliedStar  className='mr-1 text-[red]'/> {list}</li>
                     ))}
                 </lu>
             </div>

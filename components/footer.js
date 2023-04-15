@@ -5,12 +5,12 @@ export default function Footer () {
         <div className="py-10 md:py-28 bg-[#000]">
             <div className="flex justify-around w-3/5 mx-auto">
                 {footer.map((item) => (
-                    <div>
+                    <div key={item.title}>
                         <h1 className="text-[#A39C9C] font-extrabold text-xl">{item.title}</h1>
                         <div className="w-2/6 h-[0.1rem] bg-[red] mb-4 mt-2"></div>
                         <ul>
                             {item.sub.map((list) => (
-                                <li className="mb-1">{list}</li>
+                                <li className="mb-1" key={list}>{list}</li>
                             ))}
                         </ul>
                     </div>
