@@ -9,7 +9,7 @@ export default function AllCars() {
     return (
         <div className="flex flex-wrap justify-between pb-28 px-56 mt-[-4rem]">
             {Import.CarsData.map((car) => (
-                <div onClick={() => detail(car)} className="w-[32%] mt-4 over_div cursor-pointer">
+                <div key={car.id} onClick={() => detail(car)} className="w-[32%] mt-4 over_div cursor-pointer">
                     <img src={car.image[0]} alt="cars" />
                     <div className="flex p-4 justify-between bg-[#3F3F3F] items-center relative">
                         <div>

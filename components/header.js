@@ -42,7 +42,7 @@ export default function Header (){
                     </form>
                     <div className='flex w-[80%] mt-20 mx-auto duration-300 ease-out'>
                         {seachCar !== ''? filterCar.map((car) => (
-                            <div className='w-[15%] relative searchIn m-[0.5%] duration-300 compared ease-out' onClick={() => detail(car)}>
+                            <div key={car.id} className='w-[15%] relative searchIn m-[0.5%] duration-300 compared ease-out' onClick={() => detail(car)}>
                                 <div className='compared-hover'>
                                     <span className='cursor-pointer'><p>{car.name}</p></span>
                                 </div>

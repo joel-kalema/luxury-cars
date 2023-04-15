@@ -38,6 +38,7 @@ export default function About () {
                 <ul>
                     {CarsData.map((car) => (
                         <li
+                            key={car.name}
                             onClick={() => {content(car); setClicked(car.name)}} 
                             className={
                                 clicked === car.name ?
@@ -52,7 +53,7 @@ export default function About () {
                 {
                     info &&(
                         info.map((car) => (
-                            <div className="w-4/6 drop-shadow-xl">
+                            <div className="w-4/6 drop-shadow-xl" key={car.id}>
                                 <div>
                                     <img src={car.image[0]} alt="cars" className='w-full'/>
                                 </div>

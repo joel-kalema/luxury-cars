@@ -2,6 +2,7 @@ import { SiFerrari,SiLamborghini } from 'react-icons/si';
 
 export const  CarsData = [
     {
+        id: 1,
         name: 'lamborghini',
         image: ["/images/cars/lamborghini.jpg", "/images/home/lambourghini.jpg", "/images/galery/lamborghini01.jpg", "/images/galery/lamborghini02.jpg"],
         galery: ["/images/galery/lamborghini03.jpg","/images/galery/lamborghini04.jpg","/images/galery/lamborghini05.jpg","/images/galery/lamborghini06.jpg","/images/galery/lamborghini07.jpg","/images/galery/lamborghini08.jpg"],
@@ -11,6 +12,7 @@ export const  CarsData = [
         logo: <SiLamborghini />   
     },
     {
+        id: 2,
         name: 'aston Martin',
         image: ["/images/cars/Aston-Martin.jpg"],
         extract: 'Most Aston Martins have a top speed beyond 200 mph. Their speedometers reach to 220...',
@@ -19,6 +21,7 @@ export const  CarsData = [
 
     },
     {
+        id: 3,
         name: 'ferrari',
         image: ["/images/cars/Ferrari.jpg"],
         extract:'As such, one of the major items of what makes a Ferrari special is their utilization of race...',
@@ -27,6 +30,7 @@ export const  CarsData = [
         logo: <SiFerrari /> 
     },
     {
+        id: 4,
         name: 'bugatti',
         image: ["/images/cars/bugatti.jpg"],
         extract:'The CHIRON is the fastest, most powerful, and exclusive production super sports car...',
@@ -35,6 +39,7 @@ export const  CarsData = [
         
     },
     {
+        id: 5,
         name: 'maserati',
         image: ["/images/cars/maseratti.jpg"],
         extract:'Maserati, in full Maserati SpA, former name Officine Alfieri Maserati SA, Italian au...',
@@ -43,6 +48,7 @@ export const  CarsData = [
         
     },
     {
+        id: 6,
         name: 'porsche',
         image: ["/images/cars/Porsche.jpg"],
         extract:'Most obvious is its rear-engine layout. Putting the motor in the back was a decision ma...',
@@ -51,6 +57,7 @@ export const  CarsData = [
         
     },
     {
+        id: 7,
         name: 'bentley',
         image: ["/images/cars/Bentley.jpg"],
         extract:'Bentley makes ultra-luxury cars with prices that can reach millions of dollars. If you wa...',

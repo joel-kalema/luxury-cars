@@ -16,7 +16,7 @@ const router: NextRouter = useRouter();
             <div className="absolute top-0 text-center flex justfy-center items-center h-screen w-full">
                 <div className="mx-auto">
                     <h1 className="font-bold text-6xl mb-10">{car?.name}</h1>
-                    <h2 className="mb-4">Tcheck the {car?.name}'s official website</h2>
+                    <h2 className="mb-4">Tcheck the {car?.name}&lsquo;s official website</h2>
                     <a href={car?.link} className='text-[red]'>{car?.link}</a>
                     <AiOutlineArrowDown className='animate-bounce w-9 h-9 text-[red] mx-auto mt-14'/>
                 </div>
@@ -42,7 +42,7 @@ const router: NextRouter = useRouter();
                 <h1 className="font-bold text-3xl text-center">GALERY</h1>
                 <div className="flex flex-wrap justify-between px-56">
                     {car?.galery?.map((item) => (
-                        <div className="w-[32%] mt-4"><img src={item} alt={car?.name}/></div>
+                        <div key={car?.name} className="w-[32%] mt-4"><img src={item} alt={car?.name}/></div>
                     ))}
                 </div>
             </div>
