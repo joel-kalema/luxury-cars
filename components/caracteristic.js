@@ -6,7 +6,7 @@ export default function Caracteristic() {
     const lists = ['comfort', 'equipment', 'amenities', 'quality', 'performance']
 
     return (
-        <div className="p-20 mx-auto relative">
+        <div className="py-52 px-20 mx-auto relative">
             <h1 className='font-bold mb-10 text-3xl text-center'>How are luxury cars defined?</h1>
             <div className='w-[75%] mx-auto bg-[#fff1] pb-4 rounded-xl'>
                 <div className='w-full p-20 flex justify-center mx-auto mt-[1rem] bg-[#fff1] mt-16 relative rounded-xl drop-shadow-lg'>
@@ -47,14 +47,14 @@ export default function Caracteristic() {
                     </div>
                 </div>
             </div>
-            <div className='absolute text-sm left-[17rem] bottom-[3rem] py-4 px-6 exp backdrop-blur-sm bg-[#fff1] rounded-xl drop-shadow-lg'>
+            <div className='absolute text-sm left-[17rem] bottom-[7rem] py-4 px-6 exp backdrop-blur-sm bg-[#fff1] rounded-xl drop-shadow-lg'>
                 <lu>
                     {lists.map(list => (
                         <li key={list} className='flex items-center'><GiAlliedStar  className='mr-1 text-[red]'/> {list}</li>
                     ))}
                 </lu>
             </div>
-            <div className='absolute text-sm left-[26rem] bottom-[1rem] py-4 px-6 exp backdrop-blur-sm bg-[#fff1] rounded-xl drop-shadow-lg'>
+            <div className='absolute text-sm left-[26rem] bottom-[6rem] py-4 px-6 exp backdrop-blur-sm bg-[#fff1] rounded-xl drop-shadow-lg'>
                 <div className='flex items-end'>
                     <div className='w-[.2rem] h-[1rem] bg-[red] mr-2'></div>
                     <div className='w-[.2rem] h-[3rem] bg-[#fff] mr-2'></div>
