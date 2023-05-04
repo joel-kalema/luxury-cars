@@ -25,7 +25,7 @@ export default function Compareson () {
                     className={
                         comparison.length === 2 ? 'hidden duration-300 ease-out' 
                         : 
-                        'flex flex-wrap mx-auto duration-300 ease-out compare'}>
+                        'flex flex-wrap mx-auto duration-300 ease-out'}>
                     {Import.CarsData.map((car) => (
                         <div key={car.id} className='w-[15%] relative compared m-[0.5%]' onClick={() => result(car)}>
                             <div className='compared-hover'>
@@ -34,13 +34,13 @@ export default function Compareson () {
                             <div>
                                 <img src={car.image[0]} alt={car.name} />
                             </div>
-                            <p className='text-sm bg-[#fff1] p-2 font-bold text-[#c5c5c5] tracking-[.05em]'>{car.name}</p>
+                            <p className='text-xs bg-[#fff1] py-1 px-2 font-bold text-[#c5c5c5] tracking-[.05em]'>{car.name}</p>
                         </div>
                     ))}
                 </div>
                 {
                     comparison && (
-                        <div className='compare mt-16 flex flex-col items-center w-[90%] mx-auto exp backdrop-blur-sm bg-[#fff1] rounded-xl p-10'>
+                        <div className='mt-16 flex flex-col items-center w-[90%] mx-auto exp backdrop-blur-sm bg-[#fff1] rounded-xl p-10'>
                             <div className='flex mb-10'>
                                 <div className="flex items-center mr-4">
                                     <div className="w-[1rem] h-[1rem] mr-2 mt-1 border-[0.05rem] flex justify-center items-center p-2 rounded-full border-solid border-red-600">1</div>
