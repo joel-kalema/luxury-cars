@@ -23,7 +23,7 @@ export default function Cars() {
                 <div className="w-4/5 my-20 ml-[6rem]">
                     <p className="px-20">So whether you're a long-time luxury car enthusiast or you're just starting to explore the world of high-end vehicles, we invite you to explore our site and discover all that we have to offer.</p>
                 </div>
-                <div className='mt-32'>
+                <div className='mt-32 exp backdrop-blur-sm bg-[#fff1] py-10'>
                     <div className='ml-20'>
                         <h1 className='text-3xl font-bold'>Compare Cars Side By Side</h1>
                         <p className='text-xl mt-4 mb-10'>Choose Cars To Compare, Or Check Out Our Popular Comparisons.</p>
