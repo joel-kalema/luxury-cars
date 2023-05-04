@@ -1,7 +1,7 @@
 import newsData from './datas/news'
 import { MdOutlineModeComment } from 'react-icons/md';
 
-export default function News () {
+export default function News() {
     return (
         <div className="py-10 md:py-52">
             <div className="mx-auto w-2/6 mb-10">
@@ -22,13 +22,18 @@ export default function News () {
                     </div>
                 ))}
             </div>
-            <div className="mt-32 w-[20rem] relative h-[20rem] mx-auto p-10 border-solid border-2 border-wight-500 rounded-full flex justify-center items-center">
-                <MdOutlineModeComment 
-                className='text-7xl text-[red] absolute top-[-1rem] left-[10%] bg-[#1B1A1C] '
-                />
-                <h1 className="text-3xl">It&lsquo;s not just a car, It&lsquo;s someone else&lsquo;s dream
-                <span className="text-[red]">.</span></h1>
-           </div>
+            <div className='flex justify-center items-center px-32 mt-32'>
+                <div className="mt-32 mr-[-3rem] w-[15rem] relative h-[15rem] p-10 border-solid border-2 border-wight-500 rounded-full flex justify-center items-center">
+                    <MdOutlineModeComment
+                        className='text-7xl text-[red] absolute top-[-1rem] left-[10%] bg-[#1B1A1C] '
+                    />
+                    <h1 className="text-xl">It&lsquo;s not just a car, It&lsquo;s someone else&lsquo;s dream
+                        <span className="text-[red]">.</span></h1>
+                </div>
+                <div className='w-3/5 exp backdrop-blur-[.5rem] bg-[#fff1] p-10 mt-6'>
+                    <p>You find yourself in a large car dealership, surrounded by rows of shiny, expensive vehicles. You're there because you've been dreaming of owning a luxury car for as long as you can remember, and today you're finally going to make that dream a reality.</p>
+                </div>
+            </div>
         </div>
     )
 }

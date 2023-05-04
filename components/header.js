@@ -49,7 +49,7 @@ export default function Header (){
                                 <div>
                                     <img src={car.image[0]} alt={car.name} />
                                 </div>
-                                <p className='text-xs up bg-[#fff1] p-2 font-bold text-[#c5c5c5] tracking-[.05em]'>{car.name}</p>
+                                <p className='text-xs bg-[#fff1] p-2 font-bold text-[#c5c5c5] tracking-[.05em]'>{car.name}</p>
                             </div>
                         )) : []}
 
