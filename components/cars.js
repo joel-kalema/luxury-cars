@@ -20,12 +20,11 @@ export default function Cars() {
                     <div className="w-1/6 h-[0.2rem] bg-[red] mt-1"></div>
                     <h1 className="text-[#fff1] text-9xl font-bold mt-[-6rem]">CARS</h1>
                 </div>
-                <div className="w-4/5 my-20 ml-[9rem] flex">
-                    <p className="px-20">So whether you're a long-time luxury car enthusiast or you're just starting to explore the world of high-end vehicles, we invite you to explore our site and discover all that we have to offer.
-                    <div className='bg-[red] w-[8rem] h-[1px]' ></div>
-                    </p>
+                <div className="w-4/5 my-20 ml-[9rem]">
+                    <p className="px-20">So whether you're a long-time luxury car enthusiast or you're just starting to explore the world of high-end vehicles, we invite you to explore our site and discover all that we have to offer.</p>
+                    <div className='bg-[red] w-[13rem] h-[1px] mt-6 ml-[-2rem]'></div>
                 </div>
-                <div className='mt-32 exp backdrop-blur-xl bg-[#fff1] py-10 relative drop-shadow-lg'>
+                <div className='mt-28 exp backdrop-blur-xl bg-[#fff1] py-10 relative drop-shadow-lg'>
                     <div className='w-[3rem] h-[3rem] bg-[red] absolute top-[-.5rem] left-[-.5rem] drop-shadow-md'></div>
                     <div className='ml-20'>
                         <h1 className='text-3xl font-bold'>Compare Cars Side By Side</h1>
