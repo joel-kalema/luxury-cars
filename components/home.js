@@ -6,9 +6,9 @@ export default function HomePage (){
             <div className="h-full w-2/6 flex items-center z-10">
                 <div className="w-3/4">
                     <div className="bg-[#fff] w-3/4 w-[0.1rem] h-20  mx-auto"></div>
-                    <span class="relative flex h-6 w-6 mx-auto">
-                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
-                        <span class="relative inline-flex rounded-full h-6 w-6 bg-red-600"></span>
+                    <span className="relative flex h-6 w-6 mx-auto">
+                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                        <span className="relative inline-flex rounded-full h-6 w-6 bg-red-600"></span>
                     </span>
                     {/* <div className="w-[2rem] h-[2rem] mx-auto mt-4 border-[0.05rem] rounded-full border-solid border-red-600"></div> */}
                 </div>
