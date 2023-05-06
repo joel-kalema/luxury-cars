@@ -1,7 +1,13 @@
+import { useEffect } from "react";
+import AOS from "aos";
 export default function Text() {
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
     return (
         <div className='relative flex'>
-            <div className="w-1/5">
+            <div className="w-1/5" data-aos="fade-up" data-aos-duration="1000">
                 <img src="./RR.jpg" alt="" />
             </div>
 
@@ -21,7 +27,7 @@ export default function Text() {
                     </div>
                 </div>
             </div>
-            <div className="w-1/5 mt-56">
+            <div className="w-1/5 mt-56" data-aos="fade-up" data-aos-duration="1000">
                 <img src="./benz.jpg" alt="" />
             </div>
         </div>
