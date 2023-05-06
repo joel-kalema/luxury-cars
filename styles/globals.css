@@ -48,8 +48,7 @@ button:hover {
     color: red;
 }
 
-input,
-textarea {
+input {
     outline: none;
     width: 100%;
     border: none;
@@ -58,11 +57,6 @@ textarea {
     color: #ffffff;
     background-color: rgba(255, 255, 255, 0);
     border-bottom: 1px red solid;
-}
-
-textarea {
-  min-width: 5rem;
-  max-height: 5rem;
 }
 
 .nav_active {
@@ -108,7 +102,6 @@ textarea {
     background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.137)),url("/bgi.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 .detail_home::after {
@@ -119,6 +112,14 @@ textarea {
     top: 0;
     width: 100%;
     height: 100vh;
+}
+
+.campareson {
+    position: relative;
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0.137)),url("/video.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .compared-hover {
@@ -157,7 +158,6 @@ textarea {
     background-image: url("/luxury-car-brand.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 .rotate {
