@@ -1,9 +1,6 @@
 export default function Wide () {
     return (
         <div className='pt-40 relative'>
-            {/* <div>
-                <img src="luxury-car-brand.jpg" alt="" />
-            </div> */}
             <div className="experience p-20">
                 <h1 className="text-5xl mt-20">A Great Experience</h1>
                 <h1 className="text-5xl my-4">Is Waiting Four You</h1>

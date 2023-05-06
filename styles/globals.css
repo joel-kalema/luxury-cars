@@ -102,6 +102,7 @@ input {
     background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.137)),url("/bgi.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .detail_home::after {
@@ -120,6 +121,7 @@ input {
     background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0.137)),url("/video.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .compared-hover {
@@ -150,6 +152,9 @@ input {
     transition: .3s ease-in-out;
 }
 
+.shadow {
+    box-shadow: 0 0 30px #0000006e;
+}
 
 
 .experience {
@@ -158,6 +163,7 @@ input {
     background-image: url("/luxury-car-brand.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .rotate {

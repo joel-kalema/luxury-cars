@@ -30,7 +30,7 @@ export default function News() {
                     <h1 className="text-xl">It&lsquo;s not just a car, It&lsquo;s someone else&lsquo;s dream
                         <span className="text-[red]">.</span></h1>
                 </div>
-                <div className='w-3/5 exp backdrop-blur-[.5rem] bg-[#fff1] p-10 mt-6'>
+                <div className='w-3/5 exp backdrop-blur-[.5rem] bg-[#fff1] p-10 mt-6 shadow'>
                     <p>You find yourself in a large car dealership, surrounded by rows of shiny, expensive vehicles. You're there because you've been dreaming of owning a luxury car for as long as you can remember, and today you're finally going to make that dream a reality.</p>
                 </div>
             </div>

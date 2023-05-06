@@ -1,4 +1,4 @@
-/* .cars {
+.cars {
     background-image: linear-gradient(to top, #1b1a1c, #1b1a1c25), url('/images/home/cars.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -18,4 +18,4 @@
 .over_div:hover > div div .line {
     width: 20%;
     transition: .5s ease-in-out;
-} */
+}

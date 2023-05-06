@@ -10,7 +10,6 @@ export default function HomePage (){
                         <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
                         <span className="relative inline-flex rounded-full h-6 w-6 bg-red-600"></span>
                     </span>
-                    {/* <div className="w-[2rem] h-[2rem] mx-auto mt-4 border-[0.05rem] rounded-full border-solid border-red-600"></div> */}
                 </div>
                 <div className="mr-[-20rem] mt-60">
                     <h1 className="text-6xl text-[#fff] font-semibold">CHERON</h1>

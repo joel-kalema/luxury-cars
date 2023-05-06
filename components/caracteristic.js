@@ -15,8 +15,8 @@ export default function Caracteristic() {
     return (
         <div className="py-52 px-20 mx-auto relative">
             <h1 className='font-bold mb-10 text-3xl text-center'>How are luxury cars defined?</h1>
-            <div className='w-[75%] mx-auto bg-[#fff1] pb-4 rounded-xl' data-aos="fade-up" data-aos-duration="1000">
-                <div className='w-full p-20 flex justify-center mx-auto mt-[1rem] bg-[#fff1] mt-16 relative rounded-xl drop-shadow-lg'>
+            <div className='w-[75%] mx-auto bg-[#fff1] pb-4 rounded-xl' data-aos="fade-up" data-aos-duration="2000">
+                <div className='w-full p-20 flex justify-center mx-auto mt-[1rem] bg-[#fff1] mt-16 relative rounded-xl drop-shadow-lg' data-aos="fade-up" data-aos-duration="1000">
                     <img src='/images/car.png' alt='' />
                     <div className='flex absolute bottom-[5.5rem] right-[8rem] items-center'>
                         <div>
@@ -54,14 +54,14 @@ export default function Caracteristic() {
                     </div>
                 </div>
             </div>
-            <div className='absolute text-sm left-[17rem] bottom-[7rem] py-4 px-6 exp backdrop-blur-sm bg-[#fff1] rounded-xl drop-shadow-lg'>
+            <div className='absolute text-sm left-[17rem] bottom-[7rem] py-4 px-6 exp backdrop-blur-sm bg-[#fff1] rounded-xl drop-shadow-lg' data-aos="fade-up" data-aos-duration="3000">
                 <lu>
                     {lists.map(list => (
                         <li key={list} className='flex items-center'><GiAlliedStar  className='mr-1 text-[red]'/> {list}</li>
                     ))}
                 </lu>
             </div>
-            <div className='absolute text-sm left-[26rem] bottom-[6rem] py-4 px-6 exp backdrop-blur-sm bg-[#fff1] rounded-xl drop-shadow-lg'>
+            <div className='absolute text-sm left-[26rem] bottom-[6rem] py-4 px-6 exp backdrop-blur-sm bg-[#fff1] rounded-xl drop-shadow-lg' data-aos="fade-up" data-aos-duration="1000">
                 <div className='flex items-end'>
                     <div className='w-[.2rem] h-[1rem] bg-[red] mr-2'></div>
                     <div className='w-[.2rem] h-[3rem] bg-[#fff] mr-2'></div>

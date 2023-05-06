@@ -33,9 +33,9 @@ export default function About() {
                 <h1 className="text-[#fff1] text-9xl font-bold mt-[-6rem]">LUXURY</h1>
             </div>
             <Text />
-            <div>
+            <div data-aos="fade-up" data-aos-duration="1000">
                 <Link href='/paths/cars' className='ml-[68%] view text-xs font-semibold py-2 px-4'>VIEW ALL</Link>
-                <div className="flex w-3/5 mx-auto justify-between mt-6" data-aos-duration="1000">
+                <div className="flex w-3/5 mx-auto justify-between mt-6 min-h-[50vh]" data-aos-duration="1000">
                     <div className='flex flex-col items-center justify-between w-1/6'>
                         <h3 className='rotate-90  text-[red] font-semibold text-xs -tracking-4 mt-14'>CHECK CACRS</h3>
                         <div className='w-[2px] h-[8rem] bg-[red]'></div>
@@ -58,7 +58,7 @@ export default function About() {
                     {
                         info && (
                             info.map((car) => (
-                                <div key={car.id} className="w-3/5 drop-shadow-xl" data-aos="fade-up" data-aos-duration="1000">
+                                <div key={car.id} className="w-3/5 drop-shadow-xl" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
                                     <div>
                                         <img src={car.image[0]} alt="cars" className='w-full' />
                                     </div>
