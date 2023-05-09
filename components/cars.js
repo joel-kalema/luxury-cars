@@ -16,7 +16,7 @@ export default function Cars() {
             </div>
             <div className='z-40 w-3/5 ml-[-10rem]'>
                 <div className="ml-56 w-2/6 mb-10">
-                    <h1 className="text-2xl">Witch is the No 01 Luxury cars?</h1>
+                    <h1 className="text-2xl">Witch is the No 01?</h1>
                     <div className="w-1/6 h-[0.2rem] bg-[red] mt-1"></div>
                     <h1 className="text-[#fff1] text-9xl font-bold mt-[-6rem]">CARS</h1>
                 </div>

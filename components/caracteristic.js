@@ -13,9 +13,9 @@ export default function Caracteristic() {
     const lists = ['comfort', 'equipment', 'amenities', 'quality', 'performance']
 
     return (
-        <div className="py-52 px-20 mx-auto relative">
+        <div className="py-52 px-20 mx-auto relative caract">
             <h1 className='font-bold mb-10 text-3xl text-center'>How are luxury cars defined?</h1>
-            <div className='w-[75%] mx-auto bg-[#fff1] pb-4 rounded-xl' data-aos="fade-up" data-aos-duration="2000">
+            <div className='w-[75%] mx-auto bg-[#fff1] pb-4 rounded-xl' data-aos="fade-up" data-aos-duration="3000">
                 <div className='w-full p-20 flex justify-center mx-auto mt-[1rem] bg-[#fff1] mt-16 relative rounded-xl drop-shadow-lg' data-aos="fade-up" data-aos-duration="1000">
                     <img src='/images/car.png' alt='' />
                     <div className='flex absolute bottom-[5.5rem] right-[8rem] items-center'>

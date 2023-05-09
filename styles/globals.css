@@ -6,13 +6,13 @@
 
 body {
     background-color: #1B1A1C;
-    color: #ffffff;
+    color: #bbbbbb;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: .5px;
 }
 
 h1{
-    color: #fff;
+    color: #ffffff;
 }
 
 li {
@@ -115,6 +115,12 @@ input {
     height: 100vh;
 }
 
+.caract {
+    background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.945)),url("/map.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 .campareson {
     position: relative;
     width: 100%;
