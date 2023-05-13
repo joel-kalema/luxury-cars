@@ -1,4 +1,5 @@
 import { BsFillPlayFill } from 'react-icons/bs';
+import { GiCityCar } from 'react-icons/gi';
 
 export default function HomePage (){
     return (
@@ -19,20 +20,16 @@ export default function HomePage (){
             </div>
             <div className="flex w-2/6 justify-between items-flex-end z-10 absolute bottom-0 right-0 text-xs">
                 <div className="w-1/4 flex justify-center items-center text-xs">
-                    <div>
-                        <h3>3.4 sec</h3>
-                        <h4>from 0 to 90km/h</h4>
+                    <div className='border border-[red] p-6'>
+                        <h3 className='text-3xl text-[red]'>3.4<span className='text-sm'>sec</span></h3>
+                        <h1>from 0 to 90km/h</h1>
                     </div>
                 </div>
                 <div className="w-1/4 flex justify-center items-center text-xs">
                     <div>
-                        <h3>370 ml</h3>
+                        <h3 className='text-3xl'><GiCityCar /></h3>
                         <h4>90km/h</h4>
                     </div>
-                </div>
-                <div className="1/4 justify-center items-center relative">
-                    <img src="play.jpg" alt="" className="w-[6rem]"/>
-                    <a href="#" className="absolute top-4 left-6 bg-[red] w-[3rem] h-[3rem] rounded-full flex justify-center items-center text-4xl"><BsFillPlayFill /></a>
                 </div>
             </div>
         </div>
