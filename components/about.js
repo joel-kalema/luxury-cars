@@ -34,6 +34,12 @@ export default function About() {
             </div>
             <Text />
             <div data-aos="fade-up" data-aos-duration="1000">
+                <div className='mb-20 flex flex-col items-center'>
+                    <div className='h-[1px] w-[3rem] bg-[red] mr-20'></div>
+                    <h2 className='text-center font-extrabold text-2xl tracking-[.5rem] mb-2 mt-1'>Luxury Cars</h2>
+                    <div className='h-[1px] w-[3rem] bg-[red] ml-20'></div>
+                </div>
+
                 <Link href='/paths/cars' className='ml-[68%] view text-xs font-semibold py-2 px-4'>VIEW ALL</Link>
                 <div className="flex w-3/5 mx-auto justify-between mt-6 min-h-[50vh]" data-aos-duration="1000">
                     <div className='flex flex-col items-center justify-between w-1/6'>
