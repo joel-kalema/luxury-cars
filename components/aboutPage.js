@@ -7,7 +7,7 @@ export default function Text() {
     }, []);
     return (
         <div className='relative flex mb-52'>
-            <div className="w-3/6 py-16 px-5 my-20 mx-auto flex relative z-20 exp backdrop-blur-xl bg-[rgba(0, 0, 0, 0.060)] shadow" data-aos="fade-up" data-aos-duration="1000">
+            <div className="w-3/6 py-16 px-5 my-40 mx-auto flex relative z-20 exp backdrop-blur-xl bg-[rgba(0, 0, 0, 0.060)] shadow" data-aos="fade-up" data-aos-duration="1000">
                 <h1 className=" absolute rotate-90 text-[red] text-3xl top-[17rem] font-semibold left-[-6rem]">The most luxurious vehicles</h1>
                 <div className="ml-40 w-4/6">
                     <div>
