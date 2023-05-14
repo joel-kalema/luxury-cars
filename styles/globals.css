@@ -189,3 +189,18 @@ input {
         transform:rotate(360deg); 
     } 
 }
+
+
+.gallery {
+    width: 100%;
+    padding: 4rem;
+    columns: 3;
+    /* column-gap: 2rem; */
+}
+
+.gall-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
