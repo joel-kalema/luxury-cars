@@ -16,13 +16,13 @@ export default function Par() {
 
     const getImage = () => {
         axios.get(`https://api.unsplash.com/search/photos?page=1&query=${car?.name}&client_id=${key}`)
-        .then((response) => {
-            setUrl(response.data.results)
-        } )
+            .then((response) => {
+                setUrl(response.data.results)
+            })
     }
 
     getImage();
- 
+
     return (
         <div className="relative">
             <div className="h-screen truncate detail_home truncate">
@@ -57,10 +57,10 @@ export default function Par() {
                 <h1 className="font-bold text-3xl text-center">GALERY</h1>
                 <div className="gallery">
                     {url?.map((value) => (
-                        <>
-                        <img src={value.urls.small} alt='image' className="gall-image"/>
-                        <p className="mt-[-3.5rem] mb-6 p-2 exp backdrop-blur-md bg-[#0004] text-xs">{value.alt_description}</p>
-                        </>
+                        <div>
+                            <img src={value.urls.small} alt='image' className="gall-image" />
+                            <p className="mb-6 p-2 exp backdrop-blur-md bg-[#0004] text-xs">{value.alt_description}</p>
+                        </div>
                     ))}
                 </div>
             </div>
