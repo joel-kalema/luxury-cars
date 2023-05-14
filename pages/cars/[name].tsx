@@ -1,24 +1,39 @@
+import { useState } from "react";
 import { NextRouter, useRouter } from "next/router";
 import { GiCarWheel } from 'react-icons/gi';
 import { AiOutlineArrowDown } from 'react-icons/ai';
 import getCar from "../../components/datas/cars";
+import axios from "axios";
 
-export default function Par (){
-const router: NextRouter = useRouter();
+export default function Par() {
+    const [url, setUrl] = useState()
+
+    const router: NextRouter = useRouter();
     const { name } = router.query;
     const car = name ? getCar(name) : undefined;
-    
+
+    const key = 'n423Wu-So2B3sFhiA1N5VMb6KaPcGWrg7BD0Tx-DxCo';
+
+    const getImage = () => {
+        axios.get(`https://api.unsplash.com/search/photos?page=1&query=${car?.name}&client_id=${key}`)
+        .then((response) => {
+            setUrl(response.data.results)
+        } )
+    }
+
+    getImage();
+ 
     return (
         <div className="relative">
             <div className="h-screen truncate detail_home truncate">
-                <img src={car?.image[1]} alt={car?.name} className='w-full'/>
+                <img src={car?.image[1]} alt={car?.name} className='w-full' />
             </div>
             <div className="absolute top-0 text-center flex justfy-center items-center h-screen w-full">
                 <div className="mx-auto">
                     <h1 className="font-bold text-6xl mb-10">{car?.name}</h1>
                     <h2 className="mb-4">Tcheck the {car?.name}&lsquo;s official website</h2>
                     <a href={car?.link} className='text-[red]'>{car?.link}</a>
-                    <AiOutlineArrowDown className='animate-bounce w-9 h-9 text-[red] mx-auto mt-14'/>
+                    <AiOutlineArrowDown className='animate-bounce w-9 h-9 text-[red] mx-auto mt-14' />
                 </div>
             </div>
             <div className="flex max-w-[50rem] mx-auto mt-20 rounded-2xl overflow-hidden bg-[#141314] drop-shadow-xl h-[30rem]">
@@ -31,18 +46,21 @@ const router: NextRouter = useRouter();
                     </div>
                     <p className="w-4/5 text-sm">{car?.detail}</p>
                     <h2 className="text-[#fff8] mt-10">Driving a luxurious</h2>
-                    
+
                     <div className="flex items-center mt-16 ml-64">
                         <div className="w-2/6 h-[0.05rem] bg-[red] mt-4 mr-2"></div>
-                        <GiCarWheel className="text-[red] text-4xl rotate"/>
+                        <GiCarWheel className="text-[red] text-4xl rotate" />
                     </div>
                 </div>
             </div>
             <div className="py-32">
                 <h1 className="font-bold text-3xl text-center">GALERY</h1>
-                <div className="flex flex-wrap justify-between px-56">
-                    {car?.galery?.map((item) => (
-                        <div key={car?.name} className="w-[32%] mt-4"><img src={item} alt={car?.name}/></div>
+                <div className="gallery">
+                    {url?.map((value) => (
+                        <>
+                        <img src={value.urls.small} alt='image' className="gall-image"/>
+                        <p className="mt-[-3.5rem] mb-6 p-2 exp backdrop-blur-md bg-[#0004] text-xs">{value.alt_description}</p>
+                        </>
                     ))}
                 </div>
             </div>
