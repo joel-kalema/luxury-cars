@@ -2,6 +2,7 @@ import { useState } from "react";
 import { NextRouter, useRouter } from "next/router";
 import { GiCarWheel } from 'react-icons/gi';
 import { AiOutlineArrowDown } from 'react-icons/ai';
+import { FcLike } from 'react-icons/fc';
 import getCar from "../../components/datas/cars";
 import axios from "axios";
 
@@ -30,10 +31,13 @@ export default function Par() {
             </div>
             <div className="absolute top-0 text-center flex justfy-center items-center h-screen w-full">
                 <div className="mx-auto">
-                    <h1 className="font-bold text-6xl mb-10">{car?.name}</h1>
-                    <h2 className="mb-4">Tcheck the {car?.name}&lsquo;s official website</h2>
-                    <a href={car?.link} className='text-[red]'>{car?.link}</a>
-                    <AiOutlineArrowDown className='animate-bounce w-9 h-9 text-[red] mx-auto mt-14' />
+                    <div className='mb-6 flex flex-col items-center'>
+                        <div className='h-[.4rem] w-[5rem] bg-[red] mr-28 mb-4'></div>
+                        <h2 className='text-center font-bold text-6xl uppercase datail-name'>{car?.name}</h2>
+                        <div className='h-[.4rem] w-[5rem] bg-[red] ml-28 mt-4'></div>
+                    </div>
+                    <h2 className="mb-4 text-2xl">Get more details about {car?.name}</h2>
+                    <AiOutlineArrowDown className='animate-bounce w-9 h-9 text-[red] mx-auto mt-10' />
                 </div>
             </div>
             <div className="flex max-w-[50rem] mx-auto mt-20 rounded-2xl overflow-hidden bg-[#141314] drop-shadow-xl h-[30rem]">
@@ -46,6 +50,8 @@ export default function Par() {
                     </div>
                     <p className="w-4/5 text-sm">{car?.detail}</p>
                     <h2 className="text-[#fff8] mt-10">Driving a luxurious</h2>
+                    <h2 className="mb-4">Tcheck the {car?.name}&lsquo;s official website</h2>
+                    <a href={car?.link} className='text-[red]'>{car?.link}</a>
 
                     <div className="flex items-center mt-16 ml-64">
                         <div className="w-2/6 h-[0.05rem] bg-[red] mt-4 mr-2"></div>
@@ -57,9 +63,15 @@ export default function Par() {
                 <h1 className="font-bold text-3xl text-center">GALERY</h1>
                 <div className="gallery">
                     {url?.map((value) => (
-                        <div>
+                        <div className="img mb-4">
                             <img src={value.urls.small} alt='image' className="gall-image" />
-                            <p className="mb-6 p-2 exp backdrop-blur-md bg-[#0004] text-xs">{value.alt_description}</p>
+                            <div className="p-2 exp backdrop-blur-md bg-[#0004] image-detail">
+                                <div className="mb-4 flex items-end justify-center">
+                                    <FcLike className="text-3xl" />
+                                    <h1 className="ml-2">{value.likes}</h1>
+                                </div>
+                                <p className="text-sm text-center w-4/5">{value.alt_description}</p>
+                            </div>
                         </div>
                     ))}
                 </div>
