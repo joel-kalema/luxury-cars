@@ -76,7 +76,7 @@ export default function About() {
                                             </div>
                                             <p className="text-xs w-5/6">{car.extract}</p>
                                         </div>
-                                        <div onClick={() => detail(car)} className="p-3 bg-[red] text-[#fff] w-[3rem] h-[2.5rem]"><TbArrowNarrowRight /></div>
+                                        <div onClick={() => detail(car)} className="p-3 bg-[red] text-[#fff] w-[3rem] h-[2.5rem] cursor-pointer"><TbArrowNarrowRight /></div>
                                     </div>
                                 </div>
                             ))
