@@ -40,7 +40,7 @@ export default function Par() {
                     <AiOutlineArrowDown className='animate-bounce w-9 h-9 text-[red] mx-auto mt-10' />
                 </div>
             </div>
-            <div className="flex max-w-[50rem] mx-auto mt-20 rounded-2xl overflow-hidden bg-[#141314] drop-shadow-xl h-[30rem]">
+            <div className="flex max-w-[50rem] mx-auto rounded-2xl overflow-hidden bg-[#141314] drop-shadow-xl h-[30rem] mt-[-4rem]">
                 <div className="flex w-2/5"><img src={car?.image[2]} alt={car?.name} /></div>
                 <div className="w-3/5 pl-10">
                     <div className="w-2/4 mb-10 mt-10">
@@ -49,11 +49,11 @@ export default function Par() {
                         <h1 className="text-[#fff2] text-6xl font-bold mt-[-3rem]">LUXURY</h1>
                     </div>
                     <p className="w-4/5 text-sm">{car?.detail}</p>
-                    <h2 className="text-[#fff8] mt-10">Driving a luxurious</h2>
-                    <h2 className="mb-4">Tcheck the {car?.name}&lsquo;s official website</h2>
-                    <a href={car?.link} className='text-[red]'>{car?.link}</a>
+                
+                    <h2 className="mb-4 mt-10">Tcheck the {car?.name}&lsquo;s official website</h2>
+                    <a href={car?.link} className='text-[red]'>{car?.name}</a>
 
-                    <div className="flex items-center mt-16 ml-64">
+                    <div className="flex items-center mt-10 ml-64">
                         <div className="w-2/6 h-[0.05rem] bg-[red] mt-4 mr-2"></div>
                         <GiCarWheel className="text-[red] text-4xl rotate" />
                     </div>
@@ -65,7 +65,7 @@ export default function Par() {
                     {url?.map((value) => (
                         <div className="img mb-4">
                             <img src={value.urls.small} alt='image' className="gall-image" />
-                            <div className="p-2 exp backdrop-blur-md bg-[#0004] image-detail">
+                            <div className="p-2 exp backdrop-blur-md bg-[#0009] image-detail">
                                 <div className="mb-4 flex items-end justify-center">
                                     <FcLike className="text-3xl" />
                                     <h1 className="ml-2">{value.likes}</h1>
