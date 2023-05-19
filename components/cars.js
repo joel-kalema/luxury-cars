@@ -10,15 +10,15 @@ export default function Cars() {
     }, []);
 
     return (
-        <div className="py-10 md:py-28 relative flex">
-            <div className='w-2/5 z-0' data-aos="fade-up" data-aos-duration="1000">
+        <div className="py-10 md:py-28 relative flex flex-col md:flex-row">
+            <div className='mb-[-15rem] md:top-[0rem] w-2/5 z-0' data-aos="fade-up" data-aos-duration="1000">
                 <img src='/car.jpg' alt='car' className='z-0' data-aos="fade-up" data-aos-duration="1000"/>
             </div>
-            <div className='z-40 w-3/5 ml-[-10rem]'>
-                <div className="ml-56 w-2/6 mb-10">
-                    <h1 className="text-2xl">Witch is the No 01?</h1>
+            <div className='z-40 w-3/5 ml-[1rem] md:ml-[-10rem]'>
+                <div className="mx-auto w-4/6 md:w-2/6 mb-28">
+                    <h1 className="text-sm md:text-2xl">Witch is the No 01?</h1>
                     <div className="w-1/6 h-[0.2rem] bg-[red] mt-1"></div>
-                    <h1 className="text-[#fff1] text-9xl font-bold mt-[-6rem]">CARS</h1>
+                    <h1 className="text-[#fff1] text-6xl md:text-9xl font-bold mt-[-3rem] md:mt-[-6rem]">CARS</h1>
                 </div>
                 <div className="w-4/5 my-20 ml-[9rem]">
                     <p className="px-20" data-aos="fade-up" data-aos-duration="1000">So whether you're a long-time luxury car enthusiast or you're just starting to explore the world of high-end vehicles, we invite you to explore our site and discover all that we have to offer.</p>
