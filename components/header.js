@@ -21,9 +21,9 @@ export default function Header (){
 
     return (
         <div>
-            <div className="flex justify-between fixed w-5/6 exp backdrop-blur-md p-4 left-24 bg-[#0004] z-50">
+            <div className="flex justify-between fixed w-6/6 md:w-5/6 exp backdrop-blur-md p-4 left-24 bg-[#0004] z-50">
                 <div>LOGO</div>
-                <ul className="flex w-2/6 justify-between text-sm">
+                <ul className="hidden md:flex w-2/6 justify-between text-sm ">
                     <li className='cursor-pointer hover:text-[red]'><Link href='/'>Home</Link></li>
                     <li className='cursor-pointer hover:text-[red]'>cars</li>
                     <li className='cursor-pointer hover:text-[red]'>About</li>
