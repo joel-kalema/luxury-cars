@@ -99,6 +99,10 @@ input {
     }
 }
 
+.news-items {
+    flex-wrap: wrap;
+}
+
 
 .home_page {
     position: relative;
@@ -193,6 +197,14 @@ input {
         -webkit-transform: rotate(360deg); 
         transform:rotate(360deg); 
     } 
+}
+
+.liner1 {
+    background-image: linear-gradient(to right, red , rgba(255, 255, 0, 0));
+}
+
+.liner2 {
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0) , rgb(255, 0, 0));
 }
 
 
