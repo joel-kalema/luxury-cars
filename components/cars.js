@@ -1,4 +1,4 @@
-import images from './datas/images/images'
+import Image from 'next/image';
 import { useEffect } from 'react';
 import Link from 'next/link'
 import AOS from 'aos';
@@ -12,7 +12,7 @@ export default function Cars() {
     return (
         <div className="py-40 md:py-28 relative flex flex-col md:flex-row">
             <div className='mb-[-15rem] md:top-[0rem] w-2/5 z-0' data-aos="fade-up" data-aos-duration="1000">
-                <img src='/car.jpg' alt='car' className='z-0'/>
+                <Image src='/car.jpg' alt='car' className='z-0' width={700} height={400}/>
             </div>
             <div className='z-40 w-[90%] md:w-3/5 ml-[1.5rem] md:ml-[-10rem]'>
                 <div className="mx-auto w-4/6 md:w-2/6 mb-28">

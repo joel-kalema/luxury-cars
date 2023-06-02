@@ -16,7 +16,7 @@ body {
     font-family: 'Bruno Ace SC', cursive;
 }
 
-h1{
+h1 {
     color: #ffffff;
 }
 
@@ -65,11 +65,25 @@ input {
 }
 
 .nav_active {
-    display: none;
+    background-color: #1B1A1C;
+    transition: all .1s ease;
+    opacity: 0;
+}
+
+.nav_active .show-nav {
+    transition: all 1s ease;
+    opacity: 0;
 }
 
 .nav_menu {
-    display: block;
+    background-color: #1B1A1C;
+    transition: all .1s ease;
+    opacity: 1;
+}
+
+.nav_menu .show-nav {
+    transition: all 1s ease;
+    opacity: 1;
 }
 
 .searchIn,
@@ -83,19 +97,21 @@ input {
 
 @keyframes slideIn {
     0% {
-      transform: translateX(500px) scale(.2);
+        transform: translateX(500px) scale(.2);
     }
+
     100% {
-      transform: translateX(0px) scale(1);
+        transform: translateX(0px) scale(1);
     }
 }
 
 @keyframes slideUp {
     0% {
-      transform: translateY(300px);
+        transform: translateY(300px);
     }
+
     100% {
-      transform: translateY(0px);
+        transform: translateY(0px);
     }
 }
 
@@ -108,7 +124,7 @@ input {
     position: relative;
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.137)),url("/bgi.jpg");
+    background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.137)), url("/bgi.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -125,15 +141,16 @@ input {
 }
 
 .caract {
-    background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.945)),url("/map.png");
+    background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.945)), url("/map.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
 .campareson {
     position: relative;
     width: 100%;
-    background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0.137)),url("/video.jpg");
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0.137)), url("/video.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -156,13 +173,14 @@ input {
     border: 1px solid red;
     transition: 0.3s;
 }
+
 .reset:hover {
     color: #fff;
     background-color: #757575;
     transition: 0.3s;
 }
 
-.compared:hover > .compared-hover {
+.compared:hover>.compared-hover {
     opacity: 1;
     transition: .3s ease-in-out;
 }
@@ -182,29 +200,36 @@ input {
 }
 
 .rotate {
-    -webkit-animation:spin 4s linear infinite;
-    -moz-animation:spin 4s linear infinite;
-    animation:spin 4s linear infinite;
+    -webkit-animation: spin 4s linear infinite;
+    -moz-animation: spin 4s linear infinite;
+    animation: spin 4s linear infinite;
 }
-@-moz-keyframes spin { 
-    100% { -moz-transform: rotate(360deg); } 
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
 }
-@-webkit-keyframes spin { 
-    100% { -webkit-transform: rotate(360deg); } 
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
 }
-@keyframes spin { 
-    100% { 
-        -webkit-transform: rotate(360deg); 
-        transform:rotate(360deg); 
-    } 
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
 }
 
 .liner1 {
-    background-image: linear-gradient(to right, red , rgba(255, 255, 0, 0));
+    background-image: linear-gradient(to right, red, rgba(255, 255, 0, 0));
 }
 
 .liner2 {
-    background-image: linear-gradient(to right, rgba(255, 0, 0, 0) , rgb(255, 0, 0));
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(255, 0, 0));
 }
 
 
@@ -239,7 +264,21 @@ input {
     position: relative;
 }
 
-.img:hover > .image-detail {
+.img:hover>.image-detail {
     opacity: 1;
     transition: .3s ease-in-out;
+}
+
+@media only screen and (max-width: 600px) {
+    .home_page {
+        height: 40vh;
+    }
+
+    .detail_home::after {
+        height: 40vh;
+    }
+
+    .gallery {
+        padding: 1rem;
+    }
 }

@@ -21,11 +21,11 @@ export default function Header (){
 
     return (
         <div>
-            <div className="flex justify-between fixed w-6/6 md:w-5/6 exp backdrop-blur-md p-4 left-24 bg-[#0004] z-50">
+            <div className="flex justify-between fixed w-[100%] md:w-5/6 exp backdrop-blur-md p-4 md:left-24 bg-[#0004] z-50">
                 <div>LOGO</div>
                 <ul className="hidden md:flex w-2/6 justify-between text-sm ">
-                    <li className='cursor-pointer hover:text-[red]'><Link href='/'>Home</Link></li>
-                    <li className='cursor-pointer hover:text-[red]'>cars</li>
+                    <li className='cursor-pointer hover:text-[red]'><Link href='/' offset={100} duration={1000}>Home</Link></li>
+                    <li className='cursor-pointer hover:text-[red]'><Link href='/#cars' offset={100} duration={1000}>Cars</Link></li>
                     <li className='cursor-pointer hover:text-[red]'>About</li>
                     <li className='cursor-pointer hover:text-[red]'>Infos</li>
                     <li className='cursor-pointer hover:text-[red]'>Contact</li>
@@ -33,16 +33,16 @@ export default function Header (){
                 <div onClick={navToggle}><AiOutlineSearch className="mr-4 cursor-pointer"/></div>
             </div>
             <div className={active}>
-                <div className='fixed top-0 left-0 flex items-center flex-col h-screen w-full bg-[#1B1A1C] z-50'>
+                <div className='fixed top-0 left-0 flex items-center flex-col h-screen min-w-full bg-[#1B1A1C] z-50 show-nav'>
                     <VscChromeClose onClick={navToggle} className='absolute top-12 right-12 text-3xl text-[red] hover:rotate-90 transition-all' />
-                    <form className='mt-[45vh]'>
+                    <form className='mt-[35vh] md:mt-[45vh]'>
                         <input
                             onChange={e => setSeachCar(e.target.value)}
-                            className='text-4xl' type="text" name="search" id="search" placeholder="START TYPING..." maxlength="30"/>
+                            className='md:text-4xl' type="text" name="search" id="search" placeholder="START TYPING..." maxlength="30"/>
                     </form>
-                    <div className='flex w-[80%] mt-20 mx-auto duration-300 ease-out'>
+                    <div className='flex w-[95%] md:w-[80%] mt-20 mx-auto duration-300 ease-out overflow-x-auto flex-wrap'>
                         {seachCar !== ''? filterCar.map((car) => (
-                            <div key={car.id} className='w-[15%] relative searchIn m-[0.5%] duration-300 compared ease-out' onClick={() => detail(car)}>
+                            <div key={car.id} className='w-[49%] md:w-[15%] relative searchIn m-[0.5%] duration-300 compared ease-out' onClick={() => detail(car)}>
                                 <div className='compared-hover'>
                                     <span className='cursor-pointer'><p>{car.name}</p></span>
                                 </div>

@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import Image from "next/image";
 import AOS from "aos";
 export default function Text() {
     useEffect(() => {
@@ -6,7 +7,7 @@ export default function Text() {
         AOS.refresh();
     }, []);
     return (
-        <div className='relative flex mb-52'>
+        <div className='relative flex'>
             <div className="w-5/6 md:w-3/6 py-16 px-5 my-20 md:my-40 mx-auto flex-col md:flex-row flex relative z-20 exp backdrop-blur-xl bg-[rgba(0, 0, 0, 0.060)] shadow" data-aos="fade-up" data-aos-duration="1000">
                 <h1 className=" absolute md:rotate-90 text-[red] text-xl md:text-3xl top-[2rem] md:top-[17rem] font-semibold left-[1rem] md:left-[-6rem]">The most luxurious vehicles</h1>
                 <div className="ml-2 md:ml-40 w-6/6 md:w-4/6">
@@ -23,10 +24,10 @@ export default function Text() {
                 </div>
             </div>
             <div className="w-[10rem] md:w-[25rem] absolute" data-aos="fade-up" data-aos-duration="1000">
-                <img src="./car1.jpg" alt="" />
+                <Image src="/car1.jpg" alt="" width={500} height={500} />
             </div>
             <div className="w-[10rem] md:w-[25rem] absolute right-0 bottom-0" data-aos="fade-up" data-aos-duration="1000">
-                <img src="./car2.jpg" alt="" />
+                <Image src="/car2.jpg" alt="" width={500} height={500} />
             </div>
         </div>
     )

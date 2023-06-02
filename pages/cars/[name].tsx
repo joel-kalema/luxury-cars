@@ -1,9 +1,9 @@
 import { useState } from "react";
-import LoadPage from './load-page'
+import Image from "next/image";
 import { NextRouter, useRouter } from "next/router";
 import { GiCarWheel } from 'react-icons/gi';
 import { AiOutlineArrowDown } from 'react-icons/ai';
-import { FcLike } from 'react-icons/fc';
+import { AiOutlineHeart } from 'react-icons/ai';
 import getCar from "../../components/datas/cars";
 import axios from "axios";
 
@@ -27,35 +27,35 @@ export default function Par() {
 
     return (
         <div className="relative">
-            <div className="h-screen truncate detail_home truncate">
-                <img src={car?.image[1]} alt={car?.name} className='w-full' />
+            <div className="h-[40vh] md:h-screen truncate detail_home truncate">
+                <Image src={car?.image[1]} alt={car?.name} className='w-full' width={500} height={500}/>
             </div>
-            <div className="absolute top-0 text-center flex justfy-center items-center h-screen w-full">
+            <div className="absolute top-14 md:top-0 text-center flex justfy-center items-center h-[30hv] md:h-screen w-full">
                 <div className="mx-auto">
                     <div className='mb-6 flex flex-col items-center'>
-                        <div className='h-[.4rem] w-[8rem] liner1 mr-28 mb-4'></div>
-                        <h2 className='text-center font-bold text-6xl uppercase datail-name'>{car?.name}</h2>
-                        <div className='h-[.4rem] w-[8rem] liner2 ml-28 mt-4'></div>
+                        <div className='h-[.4rem] w-[8rem] liner1 mr-28 mb-2 md:mb-4 animate-pulse'></div>
+                        <h2 className='text-center font-bold text-2xl md:text-6xl uppercase datail-name'>{car?.name}</h2>
+                        <div className='h-[.4rem] w-[8rem] liner2 ml-28 mt-2 md:mt-4 animate-pulse'></div>
                     </div>
-                    <h2 className="mb-4 text-xl">Get more details about {car?.name}</h2>
+                    <h2 className="mb-4 text-sm md:text-xl">Get more details about {car?.name}</h2>
                     <AiOutlineArrowDown className='animate-bounce w-9 h-9 text-[red] mx-auto mt-10' />
                 </div>
             </div>
-            <div className="flex max-w-[50rem] mx-auto rounded-2xl overflow-hidden bg-[#141314] drop-shadow-xl h-[30rem] mt-[-4rem]" data-aos="zoom-in-up">
-                <div className="flex w-2/5"><img src={car?.image[2]} alt={car?.name} /></div>
-                <div className="w-3/5 pl-10">
+            <div className="flex max-w-[25rem] md:max-w-[50rem] mx-auto rounded-2xl overflow-hidden bg-[#141314] drop-shadow-xl h-[30rem] mt-[-4rem]" data-aos="zoom-in-up">
+                <div className="flex hidden md:block w-2/5"><Image src={car?.image[2]} alt={car?.name} width={500} height={500} /></div>
+                <div className="w-5/5 md:w-3/5 pl-10">
                     <div className="w-2/4 mb-10 mt-10">
-                        <h1 className="text-2xl">{car?.name}</h1>
+                        <h1 className="text-xl md:text-2xl">{car?.name}</h1>
                         <div className="w-1/6 h-[0.2rem] bg-[red] mt-1"></div>
-                        <h1 className="text-[#fff2] text-6xl font-bold mt-[-3rem]">LUXURY</h1>
+                        <h1 className="text-[#fff2] text-3xl md:text-6xl font-bold mt-[-3rem]">LUXURY</h1>
                     </div>
-                    <p className="w-4/5 text-sm">{car?.detail}</p>
+                    <p className="w-4/5 text-xs md:text-sm">{car?.detail}</p>
 
                     <h2 className="mb-4 mt-10">Tcheck the {car?.name}&lsquo;s official website</h2>
                     <a href={car?.link} className='text-[red]'>{car?.name}</a>
 
                     <div className="flex items-center mt-10 ml-64">
-                        <div className="w-2/6 h-[0.05rem] bg-[red] mt-4 mr-2"></div>
+                        <div className="w-2/6 h-[0.05rem] liner2 mt-4 mr-2 animate-pulse"></div>
                         <GiCarWheel className="text-[red] text-4xl rotate" />
                     </div>
                 </div>
@@ -71,10 +71,10 @@ export default function Par() {
                                 <img src={value.urls.small} alt='image' className="gall-image" />
                                 <div className="p-2 exp backdrop-blur-md bg-[#0009] image-detail">
                                     <div className="mb-4 flex items-end justify-center">
-                                        <FcLike className="text-3xl" />
+                                        <AiOutlineHeart className="text-2xl text-[red]" />
                                         <h1 className="ml-2">{value.likes}</h1>
                                     </div>
-                                    <p className="text-sm text-center w-4/5">{value.alt_description}</p>
+                                    <p className="hidden md:block text-sm text-center w-4/5">{value.alt_description}</p>
                                 </div>
                             </div>
                         ))
