@@ -1,39 +1,35 @@
 import { BsFillPlayFill } from 'react-icons/bs';
+import { GiCityCar } from 'react-icons/gi';
 
 export default function HomePage (){
     return (
         <div className="home_page flex items-center relative">
             <div className="h-full w-2/6 flex items-center z-10">
-                <div className="w-3/4">
+                <div className="w-2/4 md:w-3/4 ml-[2rem]">
                     <div className="bg-[#fff] w-3/4 w-[0.1rem] h-20  mx-auto"></div>
-                    <span class="relative flex h-6 w-6 mx-auto">
-                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
-                        <span class="relative inline-flex rounded-full h-6 w-6 bg-red-600"></span>
+                    <span className="relative flex h-4 w-4 mx-auto">
+                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                        <span className="relative inline-flex rounded-full h-4 w-4 bg-red-600"></span>
                     </span>
-                    {/* <div className="w-[2rem] h-[2rem] mx-auto mt-4 border-[0.05rem] rounded-full border-solid border-red-600"></div> */}
                 </div>
-                <div className="mr-[-20rem] mt-60">
+                <div className="mr-[-20rem] mt-20 md:mt-60">
                     <h1 className="text-6xl text-[#fff] font-semibold">CHERON</h1>
                     <h2 className="text-6xl text-[red] font-extralight">LUXER</h2>
                     <div className="bg-[#fff] w-3/4 h-[0.1rem] mt-40"></div>
                 </div>
             </div>
-            <div className="flex w-2/6 justify-between items-flex-end z-10 absolute bottom-0 right-0 text-xs">
-                <div className="w-1/4 flex justify-center items-center">
-                    <div>
-                        <h3>3.4 sec</h3>
-                        <h4>from 0 to 90km/h</h4>
+            <div className="flex w-2/6 justify-between items-flex-end z-10 absolute bottom-0 right-[4rem] md:right-0 text-xs">
+                <div className="w-1/4 flex justify-center items-center text-xs">
+                    <div className='border border-[red] p-6'>
+                        <h3 className='text-3xl text-[red]'>3.4<span className='text-sm'>sec</span></h3>
+                        <h1>from 0 to 90km/h</h1>
                     </div>
                 </div>
-                <div className="w-1/4 flex justify-center items-center">
+                <div className="w-1/4 flex justify-center items-center text-xs">
                     <div>
-                        <h3>370 ml</h3>
+                        <h3 className='text-3xl'><GiCityCar /></h3>
                         <h4>90km/h</h4>
                     </div>
-                </div>
-                <div className="1/4 justify-center items-center relative">
-                    <img src="play.jpg" alt="" className="w-[6rem]"/>
-                    <a href="#" className="absolute top-4 left-6 bg-[red] w-[3rem] h-[3rem] rounded-full flex justify-center items-center text-4xl"><BsFillPlayFill /></a>
                 </div>
             </div>
         </div>

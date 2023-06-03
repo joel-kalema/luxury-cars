@@ -3,16 +3,21 @@
 @import "~tailwindcss/utilities";
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
 
 body {
     background-color: #1B1A1C;
-    color: #ffffff;
+    color: #bbbbbb;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: .5px;
 }
 
-h1{
-    color: #fff;
+.datail-name {
+    font-family: 'Bruno Ace SC', cursive;
+}
+
+h1 {
+    color: #ffffff;
 }
 
 li {
@@ -48,8 +53,7 @@ button:hover {
     color: red;
 }
 
-input,
-textarea {
+input {
     outline: none;
     width: 100%;
     border: none;
@@ -60,17 +64,26 @@ textarea {
     border-bottom: 1px red solid;
 }
 
-textarea {
-  min-width: 5rem;
-  max-height: 5rem;
+.nav_active {
+    background-color: #1B1A1C;
+    transition: all .1s ease;
+    opacity: 0;
 }
 
-.nav_active {
-    display: none;
+.nav_active .show-nav {
+    transition: all 1s ease;
+    opacity: 0;
 }
 
 .nav_menu {
-    display: block;
+    background-color: #1B1A1C;
+    transition: all .1s ease;
+    opacity: 1;
+}
+
+.nav_menu .show-nav {
+    transition: all 1s ease;
+    opacity: 1;
 }
 
 .searchIn,
@@ -84,20 +97,26 @@ textarea {
 
 @keyframes slideIn {
     0% {
-      transform: translateX(500px) scale(.2);
+        transform: translateX(500px) scale(.2);
     }
+
     100% {
-      transform: translateX(0px) scale(1);
+        transform: translateX(0px) scale(1);
     }
 }
 
 @keyframes slideUp {
     0% {
-      transform: translateY(300px);
+        transform: translateY(300px);
     }
+
     100% {
-      transform: translateY(0px);
+        transform: translateY(0px);
     }
+}
+
+.news-items {
+    flex-wrap: wrap;
 }
 
 
@@ -105,9 +124,10 @@ textarea {
     position: relative;
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.137)),url("/bgi.jpg");
+    background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.137)), url("/bgi.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .detail_home::after {
@@ -120,12 +140,20 @@ textarea {
     height: 100vh;
 }
 
+.caract {
+    background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.945)), url("/map.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 .campareson {
     position: relative;
     width: 100%;
-    background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0.137)),url("/video.jpg");
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0.137)), url("/video.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .compared-hover {
@@ -145,17 +173,21 @@ textarea {
     border: 1px solid red;
     transition: 0.3s;
 }
+
 .reset:hover {
     color: #fff;
     background-color: #757575;
     transition: 0.3s;
 }
 
-.compared:hover > .compared-hover {
+.compared:hover>.compared-hover {
     opacity: 1;
     transition: .3s ease-in-out;
 }
 
+.shadow {
+    box-shadow: 0 0 30px #0000006e;
+}
 
 
 .experience {
@@ -164,22 +196,89 @@ textarea {
     background-image: url("/luxury-car-brand.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .rotate {
-    -webkit-animation:spin 4s linear infinite;
-    -moz-animation:spin 4s linear infinite;
-    animation:spin 4s linear infinite;
+    -webkit-animation: spin 4s linear infinite;
+    -moz-animation: spin 4s linear infinite;
+    animation: spin 4s linear infinite;
 }
-@-moz-keyframes spin { 
-    100% { -moz-transform: rotate(360deg); } 
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
 }
-@-webkit-keyframes spin { 
-    100% { -webkit-transform: rotate(360deg); } 
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
 }
-@keyframes spin { 
-    100% { 
-        -webkit-transform: rotate(360deg); 
-        transform:rotate(360deg); 
-    } 
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.liner1 {
+    background-image: linear-gradient(to right, red, rgba(255, 255, 0, 0));
+}
+
+.liner2 {
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(255, 0, 0));
+}
+
+
+.gallery {
+    width: 100%;
+    padding: 4rem;
+    columns: 3;
+    /* column-gap: 2rem; */
+}
+
+.gall-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.image-detail {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    opacity: 0;
+    transition: .2s ease-in-out;
+}
+
+.img {
+    position: relative;
+}
+
+.img:hover>.image-detail {
+    opacity: 1;
+    transition: .3s ease-in-out;
+}
+
+@media only screen and (max-width: 600px) {
+    .home_page {
+        height: 40vh;
+    }
+
+    .detail_home::after {
+        height: 40vh;
+    }
+
+    .gallery {
+        padding: 1rem;
+    }
 }
