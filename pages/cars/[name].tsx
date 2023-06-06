@@ -67,7 +67,7 @@ export default function Par() {
                 <div className="w-[8rem] h-[2px] liner2 mx-auto"></div>
                 <div className="gallery" data-aos="fade-up">
                     {url?.map((value) => (
-                            <div className="img mb-4" data-aos="fade-up">
+                            <div key={value.alt_description} className="img mb-4" data-aos="fade-up">
                                 <img src={value.urls.small} alt='image' className="gall-image" />
                                 <div className="p-2 exp backdrop-blur-md bg-[#0009] image-detail">
                                     <div className="mb-4 flex items-end justify-center">

@@ -21,7 +21,7 @@ export default function Cars() {
                     <h1 className="text-[#fff1] text-6xl md:text-9xl font-bold mt-[-3rem] md:mt-[-6rem]">CARS</h1>
                 </div>
                 <div className="w-5/5 md:w-4/5 my-20 ml-16 md:ml-[9rem]">
-                    <p className="px-2 md:px-20" data-aos="fade-up" data-aos-duration="1000">So whether you're a long-time luxury car enthusiast or you're just starting to explore the world of high-end vehicles, we invite you to explore our site and discover all that we have to offer.</p>
+                    <p className="px-2 md:px-20" data-aos="fade-up" data-aos-duration="1000">So whether you&apos;re a long-time luxury car enthusiast or you&apos;re just starting to explore the world of high-end vehicles, we invite you to explore our site and discover all that we have to offer.</p>
                     <div className="flex items-center mt-4">
                         <div className="w-2/6 h-[0.07rem] mt-1 mr-2 liner2"></div>
                         <div className="w-[1rem] h-[1rem] mt-1 border-[0.05rem] rounded-full border-solid border-red-600"></div>

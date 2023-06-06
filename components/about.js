@@ -66,8 +66,8 @@ export default function About() {
 
                         info && (
                             info.map((car) => (
-                                <div className='min-w-4/4 min-h-[5rem] md:max-h-[25rem] overflow-hidden'>
-                                    <div key={car.id} className="w-4/4 md:w-4/4 drop-shadow-xl" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
+                                <div key={car.id} className='min-w-4/4 min-h-[5rem] md:max-h-[25rem] overflow-hidden'>
+                                    <div className="w-4/4 md:w-4/4 drop-shadow-xl" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
                                         <div>
                                             <Image src={car.image[0]} alt="cars" className='w-full' width={300} height={300} />
                                         </div>
