@@ -1,9 +1,9 @@
 import { footer } from "./datas/footer"
 
-export default function Footer () {
+export default function Footer() {
     return (
         <div className="py-10 md:py-28 bg-[#000]">
-            <div className="flex justify-around w-3/5 mx-auto">
+            <div className="md:flex justify-around w-3/5 mx-auto hidden ">
                 {footer.map((item) => (
                     <div key={item.title}>
                         <h1 className="text-[#A39C9C] font-extrabold text-xl">{item.title}</h1>
@@ -15,6 +15,11 @@ export default function Footer () {
                         </ul>
                     </div>
                 ))}
+            </div>
+            <div>
+                <div className='py-10 text-center'>
+                    <p className="text-xs">© 2020 <a href="https://www.linkedin.com/in/joel-kalema/">Joel Kalema</a>, All right reserved</p>
+                </div>
             </div>
         </div>
     )

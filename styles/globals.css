@@ -271,7 +271,7 @@ input {
 
 @media only screen and (max-width: 600px) {
     .home_page {
-        height: 40vh;
+        height: 60vh;
     }
 
     .detail_home::after {
