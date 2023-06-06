@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Image from "next/image";
 import { NextRouter, useRouter } from "next/router";
 import { GiCarWheel } from 'react-icons/gi';
 import { AiOutlineArrowDown } from 'react-icons/ai';
@@ -28,7 +27,7 @@ export default function Par() {
     return (
         <div className="relative">
             <div className="h-[40vh] md:h-screen truncate detail_home truncate">
-                <Image src={car?.image[1]} alt={car?.name} className='w-full' width={500} height={500}/>
+                <img src={car?.image[1]} alt="car image" className='w-full' />
             </div>
             <div className="absolute top-14 md:top-0 text-center flex justfy-center items-center h-[30hv] md:h-screen w-full">
                 <div className="mx-auto">
@@ -42,7 +41,7 @@ export default function Par() {
                 </div>
             </div>
             <div className="flex max-w-[25rem] md:max-w-[50rem] mx-auto rounded-2xl overflow-hidden bg-[#141314] drop-shadow-xl h-[30rem] mt-[-4rem]" data-aos="zoom-in-up">
-                <div className="flex hidden md:block w-2/5"><Image src={car?.image[2]} alt={car?.name} width={500} height={500} /></div>
+                <div className="flex hidden md:block w-2/5"><img src={car?.image[2]} alt="car image" /></div>
                 <div className="w-5/5 md:w-3/5 pl-10">
                     <div className="w-2/4 mb-10 mt-10">
                         <h1 className="text-xl md:text-2xl">{car?.name}</h1>
