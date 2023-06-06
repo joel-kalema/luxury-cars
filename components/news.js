@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function News() {
     return (
-        <div className="py-10 md:py-52">
+        <div id="news" className="py-10 md:py-52">
             <div className="mx-auto w-4/6 md:w-2/6 mb-28">
                 <h1 className="text-sm md:text-2xl">News and Events</h1>
                 <div className="w-1/6 h-[0.2rem] bg-[red] mt-1"></div>

@@ -10,7 +10,7 @@ export default function Cars() {
     }, []);
 
     return (
-        <div className="py-40 md:py-28 relative flex flex-col md:flex-row">
+        <div id="comparison" className="py-40 md:py-28 relative flex flex-col md:flex-row">
             <div className='mb-[-15rem] md:top-[0rem] w-2/5 z-0' data-aos="fade-up" data-aos-duration="1000">
                 <Image src='/car.jpg' alt='car' className='z-0' width={700} height={400}/>
             </div>
