@@ -7,4 +7,4 @@ const Import ={
     CarsData
 }
 
-export default Import
+export default Import;
