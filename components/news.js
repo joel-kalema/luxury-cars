@@ -1,6 +1,5 @@
 import newsData from './datas/news'
 import { GiCarWheel } from 'react-icons/gi';
-import Image from 'next/image';
 
 export default function News() {
     return (
@@ -13,7 +12,7 @@ export default function News() {
             <div className="flex w-[90%] md:w-3/6 mx-auto justify-between text-xs mt-20 news-items">
                 {newsData.map((news) => (
                     <div key={news.detail} className=' hover:text-[red] w-[100%] md:w-[30%] mb-4'>
-                        <Image src={news.image} alt='' width={500} height={500} />
+                        <img src={news.image} alt='' />
                         <p className='text-[#fff5] my-2'>{news.date}</p>
                         <p>{news.detail}</p>
                         <a className='flex  items-center'>

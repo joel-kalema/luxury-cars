@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import Image from "next/image";
 import AOS from "aos";
 export default function Text() {
     useEffect(() => {
@@ -24,10 +23,10 @@ export default function Text() {
                 </div>
             </div>
             <div className="w-[10rem] md:w-[25rem] absolute" data-aos="fade-up" data-aos-duration="1000">
-                <Image src="/car1.jpg" alt="" width={500} height={500} />
+                <img src="/car1.jpg" alt="" />
             </div>
             <div className="w-[10rem] md:w-[25rem] absolute right-0 bottom-0" data-aos="fade-up" data-aos-duration="1000">
-                <Image src="/car2.jpg" alt="" width={500} height={500} />
+                <img src="/car2.jpg" alt="" />
             </div>
         </div>
     )

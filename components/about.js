@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { TbArrowNarrowRight } from 'react-icons/tb';
@@ -69,7 +68,7 @@ export default function About() {
                                 <div key={car.id} className='min-w-4/4 min-h-[5rem] md:max-h-[25rem] overflow-hidden'>
                                     <div className="w-4/4 md:w-4/4 drop-shadow-xl" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
                                         <div>
-                                            <Image src={car.image[0]} alt="cars" className='w-full' width={300} height={300} />
+                                            <img src={car.image[0]} alt="cars" className='w-full' />
                                         </div>
                                         <div className="flex p-4 justify-between bg-[#3F3F3F] items-center">
                                             <div>
