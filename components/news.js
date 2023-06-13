@@ -12,7 +12,7 @@ export default function News() {
             <div className="flex w-[90%] md:w-3/6 mx-auto justify-between text-xs mt-20 news-items">
                 {newsData.map((news) => (
                     <div key={news.detail} className=' hover:text-[red] w-[100%] md:w-[30%] mb-4'>
-                        <img src={news.image} alt='' />
+                        <img src={news.image} alt='' className='w-full' />
                         <p className='text-[#fff5] my-2'>{news.date}</p>
                         <p>{news.detail}</p>
                         <a className='flex  items-center'>
