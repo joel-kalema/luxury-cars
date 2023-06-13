@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Image from "next/image";
 import { NextRouter, useRouter } from "next/router";
 import { GiCarWheel } from 'react-icons/gi';
 import { AiOutlineArrowDown } from 'react-icons/ai';
@@ -27,7 +28,7 @@ export default function Par() {
     return (
         <div className="relative">
             <div className="h-[40vh] md:h-screen truncate detail_home truncate">
-                <img src={car?.image[1]} alt="car image" className='w-full' />
+                <Image src={car?.image[1]} className='w-full' width={700} height={700} />
             </div>
             <div className="absolute top-14 md:top-0 text-center flex justfy-center items-center h-[30hv] md:h-screen w-full">
                 <div className="mx-auto">
