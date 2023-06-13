@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { CarsData } from "../../components/datas/cars";
+import Image from "next/image";
 
 export default function AllCars() {
 

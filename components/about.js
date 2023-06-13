@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
+import Image from "next/image";
 import { useRouter } from 'next/router';
 import { TbArrowNarrowRight } from 'react-icons/tb';
 import { CarsData } from './datas/cars';
@@ -53,9 +54,9 @@ export default function About() {
                                 onClick={() => { content(car); setClicked(car.name) }}
                                 className={
                                     clicked === car.name ?
-                                        "text-[red] text-sm md:text-xl my-2 cursor-pointer ml-0 md:ml-4 duration-500 ease-out font-bold"
+                                        "text-[red] text-sm md:text-sm my-2 cursor-pointer ml-0 md:ml-4 duration-500 ease-out font-bold"
                                         :
-                                        "hover:text-[red] text-sm md:text-xl my-2 cursor-pointer hover:ml-4 duration-500 ease-out hover:font-bold"
+                                        "hover:text-[red] text-sm md:text-sm my-2 cursor-pointer hover:ml-4 duration-500 ease-out hover:font-bold"
                                 }>
                                 {car.name}
                             </li>
@@ -68,7 +69,7 @@ export default function About() {
                                 <div key={car.id} className='min-w-4/4 min-h-[5rem] md:max-h-[25rem] overflow-hidden'>
                                     <div className="w-4/4 md:w-4/4 drop-shadow-xl" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
                                         <div>
-                                            <img src={car.image[0]} alt="cars" className='w-full' />
+                                            <Image src={car.image[0]} alt="cars" className='w-full' width={300} height={300}/>
                                         </div>
                                         <div className="flex p-4 justify-between bg-[#3F3F3F] items-center">
                                             <div>
