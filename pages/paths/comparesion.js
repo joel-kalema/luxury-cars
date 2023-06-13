@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Import from '../import';
+import { CarsData } from "../../components/datas/cars";
 
 export default function Compareson () {
 
@@ -26,7 +26,7 @@ export default function Compareson () {
                         comparison.length === 2 ? 'hidden duration-300 ease-out' 
                         : 
                         'flex flex-wrap mx-auto duration-300 ease-out'}>
-                    {Import.CarsData.map((car) => (
+                    {CarsData.map((car) => (
                         <div key={car.id} className='w-[32%] md:w-[15%] relative compared m-[0.5%]' onClick={() => result(car)}>
                             <div className='compared-hover'>
                                 <span className='cursor-pointer'><p>{car.name}</p></span>
