@@ -2,7 +2,7 @@
 # Luxury Cars.
 
 
-![lux cars](https://user-images.githubusercontent.com/57408419/209013169-7a010fc1-af17-41a7-bd54-581fa5c4fd99.jpg)
+![Screenshot 2023-06-14 020442](https://github.com/joel-kalema/luxury-cars/assets/57408419/3d86adee-22c6-47b4-8936-d478c011f684)
 
 > Description the project.
 
