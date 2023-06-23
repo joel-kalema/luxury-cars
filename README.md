@@ -4,7 +4,7 @@
 
 ![Screenshot 2023-06-14 020442](https://github.com/joel-kalema/luxury-cars/assets/57408419/3d86adee-22c6-47b4-8936-d478c011f684)
 
-> Description the project.
+> This web app allows users to get a list of cars, car details, and helps people who are passionate about all things high-end and the goal is to provide the latest news, compare cars side by side, and information on the most luxurious vehicles on the market.
 
 
 ## Built With
