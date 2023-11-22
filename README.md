@@ -12,7 +12,7 @@
 - Nextjs
 - Tailwindcss
 
-## Live Demo (if available)
+## Live Demo
 
 [Live Demo Link](https://luxury-cars-mu.vercel.app/)
 
